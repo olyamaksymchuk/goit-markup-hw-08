@@ -1,4 +1,26 @@
 body { font-family: roboto;
     background-color: #F5F5F5;
+    color: #212121
 }
-.logo {}
+.web {color:2196F3;
+    Font-family: Raleway;
+    Font-style: Bold;
+    }
+.studio {color:000000;
+    Font-family: Raleway;
+    Font-style: Bold;
+}
+.portfolio { color:#212121;
+    Font-style: Medium
+}
+
+.list {
+    list-style:none
+}
+.site-nav .link {
+    color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus
+{    color: #2196F3;
+}
