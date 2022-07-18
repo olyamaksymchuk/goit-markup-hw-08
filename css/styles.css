@@ -1,26 +1,97 @@
-body { font-family: roboto;
-    background-color: #F5F5F5;
-    color: #212121
-}
-.web {color:2196F3;
-    Font-family: Raleway;
-    Font-style: Bold;
+:root {
+    --brand-color: #F5F5F5;
+    --primary-text-color: #212121;
+    --accent-color:  #2196F3;
     }
-.studio {color:000000;
-    Font-family: Raleway;
-    Font-style: Bold;
-}
-.portfolio { color:#212121;
-    Font-style: Medium
+
+body { 
+    font-family: roboto;
+    background-color:var(--brand-color);
+    color: var(--primary-text-color)
+
 }
 
 .list {
     list-style:none
 }
-.site-nav .link {
-    color: #212121;
+
+/*лого*/
+.web {
+    color: var(--accent-color);
+    font-size: 26px;
+    line-height: 31px
+    }
+
+.studio {color:#000000;
+    font-size: 26px;
+    line-height: 31px
 }
+
+/*навігація по сайту*/
+
+.site-nav .link { background-color: #FFFFFF;
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 16px   
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus
-{    color: #2196F3;
+{   color: var(--accent-color);
+}
+
+.contacts .link {
+    color: var(--primary-text-color);
+}
+.contacts .link:hover, 
+.contacts .link:focus {
+    color: var(--accent-color)
+}
+
+/*головне*/
+
+.hero {
+    background-color: #2F303A;
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 60px
+}
+.button { background-color: var(--accent-color);
+    color: #FFFFFF;
+    Font-size: 16px;
+    Line-height: 30px
+}
+
+/*Список послуг*/
+
+.offers {
+    background-color:var(--brand-color);
+    color:var(--primary-text-color)
+}
+.text {
+    background-color:var(--brand-color);
+    color: #757575;
+    font-size: 16px;
+    line-height: 19px
+}
+
+/*список послуг з фото*/
+
+/*Команда*/
+
+.team {
+    background-color: #F5F4FA;
+    color: var(--primary-text-color);
+    font-size: 36px;
+    line-height: 42px
+}
+
+/*footer*/
+.down {
+    background-color: #2F303A
+}
+address {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 24px
 }
