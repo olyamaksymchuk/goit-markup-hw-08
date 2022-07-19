@@ -26,15 +26,21 @@ body {
 
 .studio {color:#000000;
     font-size: 26px;
-    line-height: 31px
+    line-height: 1,2
 }
 
 /*навігація по сайту header*/
 
 header {background-color: var(--font-color);
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1,1;
     color: var(--primary-text-color) 
+}
+.link {color: var(--primary-text-color)
+}
+
+.site-nav {
+    color: var(--primary-text-color)
 }
 
 .site-nav .link:hover,
@@ -61,12 +67,12 @@ header {background-color: var(--font-color);
     background-color: #2F303A;
     color: var(--font-color);
     font-size: 44px;
-    line-height: 60px
+    line-height: 1,4
 }
 .button { background-color: var(--accent-color);
     color: var(--font-color);
     Font-size: 16px;
-    Line-height: 30px
+    Line-height: 1,9
 }
 
 /*Список послуг*/
@@ -79,7 +85,7 @@ header {background-color: var(--font-color);
     background-color:var(--brand-color);
     color: #757575;
     font-size: 16px;
-    line-height: 19px
+    line-height: 1,2
 }
 
 /*список послуг з фото*/
@@ -90,7 +96,7 @@ header {background-color: var(--font-color);
     background-color: #F5F4FA;
     color: var(--primary-text-color);
         font-size: 36px;
-    line-height: 42px
+    line-height: 1,2
 }
 
 /*footer*/
@@ -101,5 +107,6 @@ header {background-color: var(--font-color);
     color: var(--font-color);
     font-style: normal;
     font-size: 14px;
-    line-height: 24px
+    line-height: 1,7
 }
+
