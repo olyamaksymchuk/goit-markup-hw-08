@@ -227,3 +227,7 @@ h2 {
     letter-spacing: 0.03em
 }
 
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--font-color)
+}
