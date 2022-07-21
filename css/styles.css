@@ -59,6 +59,7 @@ header {
 .header-contacts .link:focus
 {   color: var(--accent-color)}
 
+.header-contacts {color: #757575;}
 .contacts-tel,
 .contacts-mail { 
     font-family: 'Roboto';
