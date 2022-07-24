@@ -18,6 +18,9 @@ body {
 
 a { text-decoration: none }
 
+.link.current {color: var(--accent-color);
+}
+
 /*лого*/
 .web {font-family: 'Raleway';
     color: var(--accent-color);
@@ -82,7 +85,7 @@ header { width: 1600px;
     letter-spacing: 0.06em;
     text-transform: uppercase}
 
-.button { font-family: 'Roboto';
+.button { font-family: inherit;
     font-weight: 700;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -90,6 +93,11 @@ header { width: 1600px;
     Font-size: 16px;
     Line-height: 1.9;
     cursor: pointer}
+
+.button:hover 
+.button:focus {
+    background-color: #188CE8;
+}
 
 /*Список послуг*/
 
@@ -143,7 +151,8 @@ h2 {
     width: 270px;
     height: 368px;
     left: 215px;
-    top: 1632px;    }
+    top: 1632px
+}
 
 .name {
     color: var(--primary-text-color);
@@ -166,7 +175,6 @@ h2 {
 
 .studio-foot {
         font-family: 'Raleway';
-        font-style: normal;
         color: var(--font-color);
         font-size: 26px;
         line-height: 1.2;
@@ -224,7 +232,7 @@ h2 {
     letter-spacing: 0.03em;
     color: var(--contact-color)}
 
-.btn  { font-family: 'Roboto';
+.btn  { font-family: inherit;
     background-color: var(--font-color);
     color:var(--primary-text-color);
     font-weight: 500;
@@ -235,9 +243,9 @@ h2 {
 }
 .btn:hover,
 .btn:focus { background-color: var(--accent-color);
-    color: #FFFFFF
-
+    color: var(--font-color)
 }
+
 .btn-primary {
     background-color: var(--accent-color);
     color: var(--font-color)
