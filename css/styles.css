@@ -1,14 +1,8 @@
 html {
     box-sizing: border-box}
 *,
-*::after,
-*::before { box-sizing: inherit}
-
-
-
-
-
-
+*::before,
+*::after { box-sizing: inherit}
 
 :root {
     --primary-text-color: #212121;
@@ -23,17 +17,28 @@ html {
 body { 
     font-family: 'Roboto', sans-serif;
     background-color: var(--font-color);
-    color: var(--primary-text-color)}
+    color: var(--primary-text-color);
+    margin:0}
 
 .list { padding: 0;
     margin: 0;
     list-style:none}
 
-a { text-decoration: none }
+a { text-decoration: none;
+}
 
 .link.current {color: var(--accent-color);
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;}
+
+
+.container { width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*лого*/
 .web {font-family: 'Raleway';
     color: var(--accent-color);
@@ -50,7 +55,7 @@ a { text-decoration: none }
 
 /*навігація по сайту header*/
 
-header { width: 1600px;
+header {
     height: 80px;
     background-color: var(--font-color);
     font-size: 14px;
@@ -66,7 +71,8 @@ header { width: 1600px;
     color: var(--primary-text-color);
     letter-spacing: 0.02em;
     font-size: 14px;
-    line-height: 1.1}
+    line-height: 1.1;
+    }
 
 .header-nav .link:hover,
 .header-nav .link:focus
@@ -79,7 +85,8 @@ header { width: 1600px;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    color: var(--contact-color)}
+    color: var(--contact-color);
+    display: inline-block;}
 
 .contacts-tel:hover,
 .contacts-tel:focus,
@@ -89,10 +96,15 @@ header { width: 1600px;
 
 /*головне*/
 
-.hero { margin-top: 0;
-    margin-top: 0;
-    background-color: var(--hero-font);
+.hero { width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    background-color: var(--hero-font)   
+}
+
+h1 {
     color: var(--font-color);
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     text-align: center;
@@ -100,11 +112,9 @@ header { width: 1600px;
     text-transform: uppercase;
     }
 
-
 .button { font-family: inherit;
     font-weight: 700;
     background-color: var(--accent-color);
-    border: 1px solid var(--accent-color);
     color: var(--font-color);
     Font-size: 16px;
     Line-height: 1.9;
@@ -113,7 +123,6 @@ header { width: 1600px;
     padding: 10px, 32px;
     border-radius: 4px;
     border-color: var(--accent-color);
-    margin-bottom: 200px;
     margin-left: 692px;
     margin-right: 692px;
     margin-top: 30px;
