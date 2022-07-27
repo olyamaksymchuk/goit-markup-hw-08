@@ -18,7 +18,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--font-color);
     color: var(--primary-text-color);
-    margin:0}
+    margin: 0}
 
 .list { padding: 0;
     margin: 0;
@@ -30,7 +30,7 @@ a { text-decoration: none;
 .link.current {color: var(--accent-color);
 }
 
-.section {
+.section { 
     padding-top: 94px;
     padding-bottom: 94px;}
 
@@ -51,12 +51,12 @@ a { text-decoration: none;
     color: var(--logo-color);
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em}
+    letter-spacing: 0.03em;
+    padding-right: 94px}
 
 /*навігація по сайту header*/
 
 header {
-    height: 80px;
     background-color: var(--font-color);
     font-size: 14px;
     line-height: 1.1;
@@ -96,20 +96,21 @@ header {
 
 /*головне*/
 
-.hero { width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    background-color: var(--hero-font)   
+.hero { 
+    background-color: var(--hero-font);
+    text-align: center;   
 }
 
-h1 {
+h1 { 
     color: var(--font-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-top: 200px;
+    margin-left: 452px;
+    margin-right: 452px;
     }
 
 .button { font-family: inherit;
@@ -120,14 +121,12 @@ h1 {
     Line-height: 1.9;
     cursor: pointer;
     display: inline-block;
-    padding: 10px, 32px;
-    border-radius: 4px;
-    border-color: var(--accent-color);
-    margin-left: 692px;
-    margin-right: 692px;
-    margin-top: 30px;
     width: 216px;
-    height: 50px;}
+    height: 50px;
+    align-items: center;
+    padding: 32px, 10px;
+    margin-top:  30px;
+    margin-bottom: 200px}
 
 .button:hover 
 .button:focus {
@@ -166,7 +165,8 @@ h2 {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em}
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;}
 
 /*Команда*/
 .teamblock {
@@ -175,7 +175,8 @@ h2 {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em}
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;}
 
 .team {
     background-color: var(--team-font);
@@ -184,9 +185,8 @@ h2 {
 .ourteam {
     background-color: var(--font-color);
     width: 270px;
-    height: 368px;
     left: 215px;
-    top: 1632px
+    top: 1632px;
 }
 
 .name {
