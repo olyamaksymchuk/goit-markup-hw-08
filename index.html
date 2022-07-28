@@ -8,21 +8,21 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="./css/styles.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
-    <header>
+    <header class="section">
         <div class="container">
                     <a href="" lang="en"><span class="web">Web</span><span class="studio">Studio</span></a>                      
         <nav>
             <ul class="header-nav list">
-                <li><a href="" class="link current">Студія</a></li>
-                <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-                <li><a href="" class="link">Контакти</a></li>
+                <li class="header-nav-li"><a href="" class="link current">Студія</a></li>
+                <li class="header-nav-li"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+                <li class="header-nav-li"><a href="" class="link">Контакти</a></li>
             </ul>            
         </nav>
         <ul class="contacts list ">     
@@ -32,39 +32,36 @@
     </div>     
     </header>
     <main>
-        
-
-        <section class="section hero">
-            
-            <h1>Ефективні рішення для вашого бізнесу</h1>
+        <section class="hero section">
+            <div class="container">
+                <h1>Ефективні рішення для вашого бізнесу</h1>
             <button class="button" type="button">Замовити послугу</button>
-        
+        </div>
     </section>
-
         <section class="section">
             <div class="container">
             <h2 hidden>Список послуг</h2>
             <ul class="offers list">
-                <li>
+                <li class="offer">
                     <h3 class="offers">увага до деталей</h3> 
                     <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                 </li>
-                <li>
+                <li  class="offer">
                     <h3 class="offers">пунктуальність</h3> 
                     <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                 </li>
-                <li>
+                <li  class="offer">
                     <h3 class="offers">планування</h3> 
                     <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
-                <li>
+                <li  class="offer">
                     <h3 class="offers">сучасні технології</h3> 
                     <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
         </div>
         </section>
-        <section class="section products">
+        <section class="products section">
             <div class="container">
             <h2>Чим ми займаємося</h2>
             <ul class="products list">
@@ -86,43 +83,51 @@
             </ul>
         </div>
         </section>
-        <section class="team">
+        <section class="team section">
             <div class="container">
             <h2 class="teamblock">Наша команда</h2>
-            <ul class="list">
+            <ul class="team-ul list">
                 <li class="ourteam"><img src="./images/designer.jpg" 
                     alt="Product designer"
                     width="270"
                     height="260">
+                    <div class="people">
                     <h3 class="name">Ігор Дем'яненко</h3>
                     <p class="position" lang="en">Product designer</p>
+                </div>
                 </li>
                 <li class="ourteam"><img src="./images/frontend.jpg" 
                     alt="Frontend Developer"
                     width="270"
                     height="260">
+                    <div class="people">
                     <h3 class="name">Ольга Рєпіна</h3>
                     <p class="position" lang="en">Frontend Developer</p>
+                </div>
                 </li>
                 <li class="ourteam"><img src="./images/marketing.jpg" 
                     alt="Marketing"
                     width="270"
                     height="260">
+                    <div class="people">
                     <h3 class="name">Микола Тарасов</h3>
                     <p class="position" lang="en">Marketing</p>
+                </div>
                 </li>
                 <li class="ourteam"><img src="./images/ui.jpg" 
                     alt="UI Designer"
                     width="270"
                     height="260">
+                    <div class="people">
                     <h3 class="name">Михайло Єрмаков</h3>
                     <p class="position" lang="en">UI Designer</p>
-                </li>
+                </div>
+            </li>
             </ul>
         </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer section">
         <div class="container">
             <a href="http://webstudio.html" lang="en"><span class="web">Web</span><span class="studio-foot">Studio</span></a> 
             <address>

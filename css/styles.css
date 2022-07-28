@@ -20,11 +20,15 @@ body {
     color: var(--primary-text-color);
     margin: 0}
 
+p, h1, h2, h3 {margin: 0}
+
+
 .list { padding: 0;
     margin: 0;
     list-style:none}
 
 a { text-decoration: none;
+    display: inline-block;
 }
 
 .link.current {color: var(--accent-color);
@@ -36,6 +40,8 @@ a { text-decoration: none;
 
 
 .container { width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -66,17 +72,26 @@ header {
 .link {
     color: var(--primary-text-color)}
 
-.header-nav {
+.header-nav { display: flex;
     font-weight: 500;
     color: var(--primary-text-color);
     letter-spacing: 0.02em;
     font-size: 14px;
     line-height: 1.1;
     }
+.header-nav .link {display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;}
+
+.header-nav-li {margin-right: 50px;
+    }
+
+.header-nav-li :last-child {margin-right: 0}
 
 .header-nav .link:hover,
 .header-nav .link:focus
-{   color: var(--accent-color)}
+{   color: var(--accent-color);
+    }
 
 .header-contacts {color: var(--contact-color);}
 .contacts-tel,
@@ -86,7 +101,10 @@ header {
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--contact-color);
-    display: inline-block;}
+    display: inline-block;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;}
 
 .contacts-tel:hover,
 .contacts-tel:focus,
@@ -99,7 +117,8 @@ header {
 .hero { 
     background-color: var(--hero-font);
     text-align: center;   
-}
+    padding-top: 0;
+    }
 
 h1 { 
     color: var(--font-color);
@@ -108,9 +127,8 @@ h1 {
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-top: 200px;
-    margin-left: 452px;
-    margin-right: 452px;
+    max-width: 696px;
+    padding-top: 200px; 
     }
 
 .button { font-family: inherit;
@@ -120,13 +138,16 @@ h1 {
     Font-size: 16px;
     Line-height: 1.9;
     cursor: pointer;
-    display: inline-block;
+    display: block;
     width: 216px;
     height: 50px;
     align-items: center;
     padding: 32px, 10px;
+    margin: 0 auto;
     margin-top:  30px;
-    margin-bottom: 200px}
+    margin-bottom: 200px;
+    border-radius: 4px;
+    border-color: #188CE8;}
 
 .button:hover 
 .button:focus {
@@ -135,14 +156,21 @@ h1 {
 
 /*Список послуг*/
 
-.offers {
+.offers { display: flex;
     background-color:var(--font-color);
     color:var(--primary-text-color);
     font-weight: 700px;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
-    text-transform: uppercase}
+    text-transform: uppercase;
+    margin-bottom: 10px;}
+
+
+.offer { padding-bottom: 30px;
+    max-width: 270px;
+}
+.offer :last-child {margin-right: 0;}
 
 .text {
     background-color:var(--font-color);
@@ -155,9 +183,10 @@ h1 {
 }
 
 /*список послуг з фото*/
-.products {
+.products {display: flex;
     background-color: var(--font-color);
-    position: center}
+    position: center;
+    padding-top: 0;}
 
 h2 {
     background-color:var(--font-color);
@@ -166,7 +195,8 @@ h2 {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;}
+    margin-bottom: 50px;
+    margin-top: 0}
 
 /*Команда*/
 .teamblock {
@@ -176,25 +206,35 @@ h2 {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;}
+    margin-bottom: 50px;
+    }
+.team-ul {display: flex;}
+
 
 .team {
     background-color: var(--team-font);
-    text-align: center}
+    text-align: center;
+    }
 
 .ourteam {
     background-color: var(--font-color);
     width: 270px;
     left: 215px;
     top: 1632px;
-}
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-right: 30px;}
+
+.ourteam :last-child {margin-right: 0;}
 
 .name {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em}
+    letter-spacing: 0.03em;
+    padding-bottom: 10px;
+    }
     
 .position { 
     color: var(--contact-color);
@@ -202,10 +242,18 @@ h2 {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em}
+    letter-spacing: 0.03em;
+    }
+
+.people {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 /*footer*/
-.footer {
+.footer {padding-top: 0;
     background-color: var(--hero-font)}
 
 .studio-foot {
@@ -230,7 +278,15 @@ h2 {
     font-size: 16px;
     line-height: 1.6;
     text-align: center; 
-    letter-spacing: 0.03em}
+    letter-spacing: 0.03em;
+    display: flex;
+    margin-bottom: 50px;
+    width: 575px;
+    margin-right: 512px;
+    margin-left: 512px;
+
+    
+    }
 
 .mail, 
 .tel {
@@ -274,7 +330,9 @@ h2 {
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-    letter-spacing: 0.03em
+    letter-spacing: 0.03em;
+    margin-right: 8px;
+   
 }
 .btn:hover,
 .btn:focus { background-color: var(--accent-color);
