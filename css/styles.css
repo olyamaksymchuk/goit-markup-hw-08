@@ -40,8 +40,6 @@ a { text-decoration: none;
 
 
 .container { width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -50,7 +48,8 @@ a { text-decoration: none;
     color: var(--accent-color);
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em}
+    letter-spacing: 0.03em;
+    }
 
 .studio {
     font-family: 'Raleway';
@@ -58,11 +57,14 @@ a { text-decoration: none;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    padding-right: 94px}
+    margin-right: 94px;}
+
+.logo {display:flex;
+    align-items: center}
 
 /*навігація по сайту header*/
 
-header {
+header{
     background-color: var(--font-color);
     font-size: 14px;
     line-height: 1.1;
@@ -73,15 +75,16 @@ header {
     color: var(--primary-text-color)}
 
 .header-nav { display: flex;
+    align-items: center;
     font-weight: 500;
     color: var(--primary-text-color);
     letter-spacing: 0.02em;
     font-size: 14px;
     line-height: 1.1;
     }
+
 .header-nav .link {display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;}
+    align-items: center}
 
 .header-nav-li {margin-right: 50px;
     }
@@ -93,7 +96,14 @@ header {
 {   color: var(--accent-color);
     }
 
+.contacts {display: flex;
+    margin: auto;
+    }
+
+.contacts-li {margin-right: 50px;}
+
 .header-contacts {color: var(--contact-color);}
+
 .contacts-tel,
 .contacts-mail { 
     font-weight: 500;
@@ -101,8 +111,6 @@ header {
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--contact-color);
-    display: inline-block;
-    display: block;
     padding-top: 32px;
     padding-bottom: 32px;}
 
@@ -112,15 +120,20 @@ header {
 .contacts-mail:focus
 {  color: var(--accent-color)}
 
+.logo .container {border: 1px #ECECEC;
+}
+
 /*головне*/
 
 .hero { 
     background-color: var(--hero-font);
-    text-align: center;   
-    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    display: block;
+    width: 1600px;
     }
 
-h1 { 
+.hero-title { 
     color: var(--font-color);
     font-weight: 900;
     font-size: 44px;
@@ -128,7 +141,7 @@ h1 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     max-width: 696px;
-    padding-top: 200px; 
+    margin: 0 auto;
     }
 
 .button { font-family: inherit;
@@ -138,14 +151,13 @@ h1 {
     Font-size: 16px;
     Line-height: 1.9;
     cursor: pointer;
-    display: block;
-    width: 216px;
-    height: 50px;
-    align-items: center;
+    display: inline-block;
+    text-align: center;
+    min-width: 216px;
     padding: 32px, 10px;
     margin: 0 auto;
-    margin-top:  30px;
-    margin-bottom: 200px;
+    margin-top: 30px;
+    border: 1px solid transparent;
     border-radius: 4px;
     border-color: #188CE8;}
 
@@ -167,10 +179,11 @@ h1 {
     margin-bottom: 10px;}
 
 
-.offer { padding-bottom: 30px;
+.offers-li { padding-bottom: 30px;
     max-width: 270px;
+    margin-right: 30px;
 }
-.offer :last-child {margin-right: 0;}
+.offers-li :last-child {margin-right: 0;}
 
 .text {
     background-color:var(--font-color);
@@ -188,7 +201,7 @@ h1 {
     position: center;
     padding-top: 0;}
 
-h2 {
+.products-title {
     background-color:var(--font-color);
     color: var(--primary-text-color);
     font-size: 36px;
@@ -198,6 +211,10 @@ h2 {
     margin-bottom: 50px;
     margin-top: 0}
 
+.products-li {
+    margin-right: 30px;}
+
+.products-li :last-child {margin-right: 0;}
 /*Команда*/
 .teamblock {
     background-color: var(--team-font);
@@ -216,7 +233,7 @@ h2 {
     text-align: center;
     }
 
-.ourteam {
+.team-li {
     background-color: var(--font-color);
     width: 270px;
     left: 215px;
@@ -225,7 +242,7 @@ h2 {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     margin-right: 30px;}
 
-.ourteam :last-child {margin-right: 0;}
+.team-li :last-child {margin-right: 0;}
 
 .name {
     color: var(--primary-text-color);
@@ -255,6 +272,9 @@ h2 {
 /*footer*/
 .footer {padding-top: 0;
     background-color: var(--hero-font)}
+
+.footer-logo {margin-top: 60px;
+margin-bottom: 20px;}
 
 .studio-foot {
         font-family: 'Raleway';
@@ -332,8 +352,8 @@ h2 {
     text-align: center;
     letter-spacing: 0.03em;
     margin-right: 8px;
-   
 }
+
 .btn:hover,
 .btn:focus { background-color: var(--accent-color);
     color: var(--font-color)
