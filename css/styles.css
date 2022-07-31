@@ -79,12 +79,13 @@ a { text-decoration: none;
 
 /*навігація по сайту header*/
 
-header{
+.head{
     background-color: var(--font-color);
     font-size: 14px;
     line-height: 1.1;
     color: var(--primary-text-color);
-    
+    padding-bottom: 0;
+    padding-top: 0;
     }
 
 .link {
@@ -136,7 +137,7 @@ header{
 .contacts-mail:focus
 {  color: var(--accent-color)}
 
-.logo {border-bottom: 1px solid #ECECEC;
+.head {border-bottom: 1px solid #ECECEC;
 }
 
 /*головне*/
@@ -320,7 +321,7 @@ margin-bottom: 20px;}
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.mail-footer {margin-bottom: 9 px;}
+.mail-footer {margin-bottom: 9px;}
 
 .tel-footer {padding-bottom: 60px;}
 
@@ -335,13 +336,12 @@ margin-bottom: 20px;}
 /*Портфоліо мейн*/
 
 .main {
-    padding-top: 0;
+    padding-top: 94px;
     background-color: var(--font-color);
     }
 
 .buttons {display: flex;
-   
-    width: 575px;
+    justify-content: center;
     margin-top: 0;
     margin-bottom: 50px;
 }
@@ -357,7 +357,10 @@ margin-bottom: 20px;}
     margin-right: 8px;
     border: 1px solid transparent;
     border-radius: 4px; 
-
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
 .btn :last-child {margin-right: 0}
