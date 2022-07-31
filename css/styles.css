@@ -42,6 +42,21 @@ a { text-decoration: none;
 .container { width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 /*лого*/
 .web {font-family: 'Raleway';
@@ -69,6 +84,7 @@ header{
     font-size: 14px;
     line-height: 1.1;
     color: var(--primary-text-color);
+    
     }
 
 .link {
@@ -120,7 +136,7 @@ header{
 .contacts-mail:focus
 {  color: var(--accent-color)}
 
-.logo .container {border: 1px #ECECEC;
+.logo {border-bottom: 1px solid #ECECEC;
 }
 
 /*головне*/
@@ -129,8 +145,7 @@ header{
     background-color: var(--hero-font);
     margin-top: 0;
     text-align: center;
-    display: block;
-    width: 1600px;
+    display: block
     }
 
 .hero-title { 
@@ -215,7 +230,9 @@ header{
     margin-right: 30px;}
 
 .products-li :last-child {margin-right: 0;}
+
 /*Команда*/
+
 .teamblock {
     background-color: var(--team-font);
     color: var(--primary-text-color);
@@ -271,9 +288,10 @@ header{
 
 /*footer*/
 .footer {padding-top: 0;
+    padding-bottom: 0;
     background-color: var(--hero-font)}
 
-.footer-logo {margin-top: 60px;
+.footer-logo {margin-top: 65px;
 margin-bottom: 20px;}
 
 .studio-foot {
@@ -290,22 +308,7 @@ margin-bottom: 20px;}
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-}
-
-.buttons { 
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center; 
-    letter-spacing: 0.03em;
-    display: flex;
-    margin-bottom: 50px;
-    width: 575px;
-    margin-right: 512px;
-    margin-left: 512px;
-
-    
+    margin-bottom: 9px;
     }
 
 .mail, 
@@ -315,7 +318,11 @@ margin-bottom: 20px;}
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6)}
+    color: rgba(255, 255, 255, 0.6);
+}
+.mail-footer {margin-bottom: 9 px;}
+
+.tel-footer {padding-bottom: 60px;}
 
 .mail:hover,
 .mail:focus,
@@ -324,27 +331,23 @@ margin-bottom: 20px;}
     color: var(--accent-color)
 }
 
+
 /*Портфоліо мейн*/
 
 .main {
-    background-color: var(--font-color);}
+    padding-top: 0;
+    background-color: var(--font-color);
+    }
 
-.gallery-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--primary-text-color)}
-
-.gallery-product {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-    color: var(--contact-color)}
+.buttons {display: flex;
+   
+    width: 575px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
 
 .btn  { font-family: inherit;
-    background-color: var(--font-color);
+    background-color: #F5F4FA;
     color:var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -352,7 +355,12 @@ margin-bottom: 20px;}
     text-align: center;
     letter-spacing: 0.03em;
     margin-right: 8px;
+    border: 1px solid transparent;
+    border-radius: 4px; 
+
 }
+
+.btn :last-child {margin-right: 0}
 
 .btn:hover,
 .btn:focus { background-color: var(--accent-color);
@@ -363,3 +371,39 @@ margin-bottom: 20px;}
     background-color: var(--accent-color);
     color: var(--font-color)
 }
+.gallery { padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+
+.gallery-item {flex-basis: calc((100% - 2 * 30px) / 3);
+    width: 370px;
+    border: 1px solid #EEEEEE;
+    }
+
+img {display: block;
+    width: 100%;}
+
+.gallery-title {margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color)}
+
+.description {margin-right: 24px;
+    margin-left: 24px;
+    width: 322px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.gallery-product {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--contact-color)}
+
