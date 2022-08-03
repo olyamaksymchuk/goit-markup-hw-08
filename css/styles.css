@@ -27,9 +27,7 @@ p, h1, h2, h3 {margin: 0}
     margin: 0;
     list-style:none}
 
-a { text-decoration: none;
-    display: inline-block;
-}
+a { text-decoration: none;}
 
 .link.current {color: var(--accent-color);
 }
@@ -93,7 +91,8 @@ a { text-decoration: none;
     }
 
 .link {
-    color: var(--primary-text-color)}
+    color: var(--primary-text-color);
+    padding: 32px 0;}
 
 .nav { display: flex;
     align-items: center;
@@ -107,7 +106,8 @@ a { text-decoration: none;
 
 .nav-item 
 .contact {display: block;
-    align-items: center}
+    align-items: center;
+    }
 
 .nav .link:hover,
 .nav .link:focus
@@ -117,8 +117,7 @@ a { text-decoration: none;
 .contacts {display: flex;
     margin-left: auto;
     column-gap: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;}
+    }
 
 .contacts {color: var(--contact-color);}
 
@@ -126,9 +125,12 @@ a { text-decoration: none;
 .contacts-mail { 
     font-weight: 500;
     font-size: 14px;
+    display: flex;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--contact-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
     }
 
 .contacts-tel:hover,
@@ -186,35 +188,39 @@ a { text-decoration: none;
 
 /*Список послуг*/
 
-.offers { display: flex;
-    background-color:var(--font-color);
+.offer {background-color: var(--font-color);}
+
+.offers-list { display: flex;}
+
+.offer-item { 
+    margin-right: 30px;
+    flex-basis: calc((100% - 3 * 30px) / 4);}
+
+.offer-item-title {
     color:var(--primary-text-color);
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 0px;}
-
-
-.offer { width: 270px;
-    margin-right: 30px;
-    flex-basis: calc((100% - 3 * 30px) / 4);;
+    margin-bottom: 10px;
 }
 
-.offer:last-child {margin-right: 0}
+.offer-item:last-child {margin-right: 0}
 
 .text {
-    background-color:var(--font-color);
     color: var(--contact-color);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03e;
-    text-transform: none
+    text-transform: none;
+    margin-bottom: 0;
 }
 
 /*список послуг з фото*/
+
+.product {padding-top: 0;}
+
 .products {display: flex;
     flex-basis: calc((100% - 2 *30px) / 3);
     background-color: var(--font-color);
@@ -232,6 +238,10 @@ a { text-decoration: none;
 
 .products-item {
     margin-right: 30px;}
+
+img {max-width: 370px;
+width: 100%;
+height: auto;}
 
 .products-item:last-child {margin-right: 0}
 
@@ -264,7 +274,6 @@ a { text-decoration: none;
 
 .name {
     color: var(--primary-text-color);
-    font-style: medium;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
@@ -298,9 +307,8 @@ a { text-decoration: none;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    margin-right: 93px;
-    padding-top: 0px;
-    padding-bottom: 20px;}
+    display: block;
+    margin-bottom: 20px}
 
 .studio-foot {
     font-family: 'Raleway';
@@ -320,9 +328,16 @@ a { text-decoration: none;
 
 .contacts-down {display: block;}
     
-.mail-down {margin-bottom: 6px;}
+.mail-down {display: block;
+    margin-bottom: 6px;
+    font-style: normal;
+    color: var(--font-color);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);}
 
-.mail, 
+.mail-down, 
 .tel {
     font-style: normal;
     color: var(--font-color);
@@ -332,8 +347,8 @@ a { text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.mail:hover,
-.mail:focus,
+.mail-down:hover,
+.mail-down:focus,
 .tel:hover,
 .tel:focus {
     color: var(--accent-color)
@@ -344,6 +359,7 @@ a { text-decoration: none;
 
 .portfolio {
     padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--font-color);
     }
 
@@ -387,7 +403,6 @@ a { text-decoration: none;
     }
 
 .gallery-item {flex-basis: calc((100% - 2 * 30px) / 3);
-    border: 1px solid #EEEEEE;
     }
 
 img {display: block; 
@@ -401,7 +416,8 @@ img {display: block;
     letter-spacing: 0.06em;
     color: var(--primary-text-color)}
 
-.description {padding: 20px 24px}
+.description {padding: 20px 24px;
+    border: 1px solid #EEEEEE}
 
 .gallery-product {
     font-weight: 400;
