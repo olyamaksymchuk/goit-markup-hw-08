@@ -234,7 +234,21 @@ a { text-decoration: none;}
     margin-bottom: 0;
 }
 
-.benefit-item {}
+.benefit {
+    background-color: #F5F4FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.benefit-item {display: flex;
+    justify-content: center;
+    align-items: center;
+border-radius: 4px;}
 
 /*список послуг з фото*/
 
@@ -325,7 +339,7 @@ height: auto;}
 .members-soc-link{
     width: 44px;
     height: 44px;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: var(--font-color);
     display: flex;
     align-items: center;
