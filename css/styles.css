@@ -243,12 +243,14 @@ a { text-decoration: none;}
     max-width: 270px;
     height: 120px;
     margin-bottom: 30px;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 .benefit-item {display: flex;
     justify-content: center;
     align-items: center;
-border-radius: 4px;}
+    }
 
 /*список послуг з фото*/
 
@@ -273,8 +275,8 @@ border-radius: 4px;}
     margin-right: 30px;}
 
 img {max-width: 370px;
-width: 100%;
-height: auto;}
+    width: 100%;
+    height: auto;}
 
 .products-item:last-child {margin-right: 0}
 
@@ -321,7 +323,7 @@ height: auto;}
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     }
 
 .people {
@@ -359,44 +361,55 @@ height: auto;}
 .members-soc-link:focus .members-soc-icon{
     fill: var(--font-color);}
 
-
-
-
 /* Clients*/
 
 .clients {
     background-color: var(--font-color)}
 
 .client-title {
-    Font-style: Bold;
     Font-size: 36px;
     line-height: 1.2;
     Letter-spacing: 3%;
     color: var(--primary-text-color);
     text-align: center;
+    margin: 0;
     margin-bottom: 50px;
-    background-color: #5555;
-}
+    }
+
 .client-list { 
     display: flex;
     justify-content: center;
-    gap: 10px; }
-
-.client-item-link {
-    width: 170px;
-    height: 92px;
     gap: 30px;
-    border: 1px solid #AFB1B8;
-    display: block;
-    
-    
+    list-style: none;
+    }
+
+.client-item-link {display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px
 }   
 
+.client-item-icon {fill: var(--icon-color);}
+
+.client-item-link:hover, 
+.client-item-link:focus,
+.client-item-icon:hover,
+.client-item-icon:focus{
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
 /*footer*/
+
 .down { background-color: var(--hero-font);
     padding-bottom: 60px;
-    padding-top: 60px;}
-
+    padding-top: 60px;
+}
+.foot-info {display: flex;
+}
 .web-down{ font-family: 'Raleway';
     color: var(--accent-color);
     font-size: 26px;
@@ -448,7 +461,39 @@ height: auto;}
 .tel:focus {
     color: var(--accent-color)
 }
+.social-links {
+}
 
+    
+.social-links-title{
+    Font-size: 14px;
+    Line-height: 1.1px;
+    color: var(--font-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.social-list {display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;}
+
+.social-link {display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--hero-font);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px}
+
+.social-links-icon {fill: var(--font-color);}
+
+.social-link:hover
+.social-link:focus {
+    background-color: var(--accent-color);
+}
 
 /*Портфоліо мейн*/
 
