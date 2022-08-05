@@ -91,9 +91,14 @@ a { text-decoration: none;}
     padding-top: 0;
     }
 
-.link {
+.link { display: block;
     color: var(--primary-text-color);
-    padding: 32px 0;}
+    padding: 32px 0;
+}
+
+.link:hover,
+.link:focus
+{   color: var(--accent-color);}
 
 .nav { display: flex;
     align-items: center;
@@ -102,31 +107,20 @@ a { text-decoration: none;}
     letter-spacing: 0.02em;
     font-size: 14px;
     line-height: 1.1;
-    column-gap: 50px;
+    gap: 50px;
     }
 
-.nav-item 
-.contact {display: block;
+.contacts { display: flex;
+    justify-content: center;
     align-items: center;
-    }
-
-.nav .link:hover,
-.nav .link:focus
-{   color: var(--accent-color);
-    }
-
-.contacts {display: flex;
     margin-left: auto;
-    column-gap: 50px;
+    gap: 30px;
     }
 
-.contacts {color: var(--contact-color);}
-
-.contacts-tel,
-.contacts-mail{ 
+.header-contact-link { display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
-    display: flex;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--contact-color);
@@ -134,22 +128,20 @@ a { text-decoration: none;}
     padding-bottom: 32px;
     }
 
-.contacts-tel:hover,
-.contacts-tel:focus,
-.contacts-mail:hover,
-.contacts-mail:focus
-{  color: var(--accent-color)}
+.header-contact-link:hover,   .header-icon,
+.header-contact-link:focus,   .header-icon{
+    color: var(--accent-color);
+    fill: currentColor}
 
 .head {border-bottom: 1px solid #ECECEC;
 }
 
-.icon-mail-item {
+.header-icon {
     fill: var(--contact-color);
-    margin-right: 10px;}
+    margin-right: 10px;
+    }
 
-.icon-mail-item:hover,
-.icon-mail-item:focus
-{  color: var(--accent-color)}
+.header-contact-link:hover .header-icon {fill: currentColor;} 
 
 /*головне*/
 
@@ -282,7 +274,6 @@ img {max-width: 370px;
 
 /*Команда*/
 
-
 .team {
     background-color: var(--team-font);
     color: var(--primary-text-color);
@@ -298,9 +289,6 @@ img {max-width: 370px;
 
 .member {
     background-color: var(--font-color);
-    width: 270px;
-    left: 215px;
-    top: 1632px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     margin-right: 30px;}
@@ -461,8 +449,18 @@ img {max-width: 370px;
 .tel:focus {
     color: var(--accent-color)
 }
-.social-links {
+.foot-info {display: flex;
+    align-content: flex-start;
+    gap: 70px;
+    align-items: baseline;
 }
+
+.social-links {display: flex;
+    flex-wrap: wrap;
+    max-width: 206px;
+    height: 100%;
+    height: 80px;
+    }
 
     
 .social-links-title{
@@ -470,28 +468,27 @@ img {max-width: 370px;
     Line-height: 1.1px;
     color: var(--font-color);
     text-transform: uppercase;
-    text-align: center;
     margin: 0;
-    margin-bottom: 20px;
-}
+    }
 
 .social-list {display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 10px;}
 
 .social-link {display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     background-color: var(--hero-font);
     border-radius: 50%;
     width: 44px;
     height: 44px}
 
-.social-links-icon {fill: var(--font-color);}
+.social-links-icon {
+    fill: var(--font-color);}
 
-.social-link:hover
-.social-link:focus {
+.social-link:hover,
+.social-link:focus{
     background-color: var(--accent-color);
 }
 
@@ -529,8 +526,10 @@ img {max-width: 370px;
 
 .btn:hover,
 .btn:focus { background-color: var(--accent-color);
-    color: var(--font-color)
-}
+    color: var(--font-color);
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.08),
+    0 2px 2px rgba(0, 0, 0, 0.12)}
 
 .btn-primary {
     background-color: var(--accent-color);
@@ -543,7 +542,16 @@ img {max-width: 370px;
     }
 
 .gallery-item {flex-basis: calc((100% - 2 * 30px) / 3);
+    border: 1px solid #FFFFFF;
     }
+
+.gallery-link {display: block;}
+
+.gallery-link:hover,
+.gallery-link:focus{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16)}
 
 img {display: block; 
     width: 370;
@@ -557,7 +565,8 @@ img {display: block;
     color: var(--primary-text-color)}
 
 .description {padding: 20px 24px;
-    border: 1px solid #EEEEEE}
+    border: 1px solid #EEEEEE;
+    border-top: 0;}
 
 .gallery-product {
     font-weight: 400;
