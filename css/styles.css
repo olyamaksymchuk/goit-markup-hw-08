@@ -254,13 +254,32 @@ a { text-decoration: none;}
     margin-top: 0}
 
 .products-item {
-    margin-right: 30px;}
+    margin-right: 30px;
+    position: relative;
+    }
 
 img {max-width: 370px;
     width: 100%;
     height: auto;}
 
 .products-item:last-child {margin-right: 0}
+
+.box {position: absolute;
+    background-color: rgba(47, 48, 58, 0.8);
+    border: 1px solid transparent;
+    padding: 27px 107px;
+    max-width: 370px;
+    height: 70px;
+    bottom: 0;
+    }
+
+.box-label {color: var(--font-color);
+    Font-size: 14px;
+    Line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.03;
+    text-align: center}
+
 
 /*Команда*/
 
