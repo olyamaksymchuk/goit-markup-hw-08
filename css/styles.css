@@ -221,7 +221,7 @@ a { text-decoration: none;}
     border-radius: 4px;
 }
 
-.btn-item {width: 30px;
+.btn-item-modal {width: 30px;
     height: 30px;
     border-radius: 50%;
     display: flex;
@@ -233,15 +233,6 @@ a { text-decoration: none;}
     top: 8px;
     right: 8px;
 }
-
-
-
-
-
-
-
-
-
 
 /*Список послуг*/
 
@@ -321,13 +312,13 @@ img {max-width: 370px;
 
 .products-item:last-child {margin-right: 0}
 
-.box {position: absolute;
+.box {position: absolute; 
+    bottom: 0;
     background-color: rgba(47, 48, 58, 0.8);
     border: 1px solid transparent;
-    padding: 27px 107px;
-    width: 100%;
+    width: 368px;
     height: 70px;
-    bottom: 0;
+    box-sizing: content-box;
     }
 
 .box-label {color: var(--font-color);
@@ -335,7 +326,7 @@ img {max-width: 370px;
     Line-height: 1.1;
     text-transform: uppercase;
     letter-spacing: 0.03;
-    display: inline-block;
+    padding-top: 27px;
     text-align: center}
 
 
@@ -607,7 +598,10 @@ img {max-width: 370px;
     border: 1px solid #FFFFFF;
     }
 
-.gallery-link {display: block;}
+.gallery-item:hover .overlay {opacity: 1;}
+
+.gallery-link {display: block;
+}
 
 .gallery-link:hover,
 .gallery-link:focus{
@@ -628,7 +622,8 @@ img {display: block;
 
 .description {padding: 20px 24px;
     border: 1px solid #EEEEEE;
-    border-top: 0;}
+    border-top: 0;
+    margin-top: 20px;}
 
 .gallery-product {
     font-weight: 400;
@@ -637,3 +632,32 @@ img {display: block;
     letter-spacing: 0.03em;
     color: var(--contact-color)}
 
+.gallery-item-wrap {position: relative;
+    }
+
+.overlay {position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    content: '';
+    opacity: 0;
+    }
+
+.technokryak{
+    color:var(--font-color);
+    Font-size: 18px;
+    Line-height: 1.6;
+    Letter-spacing: 0.03em;
+    display: block;
+    margin: 63px 24px;
+    width: 322px;
+    }
+
+.finger {position: absolute;
+    fill: var(--logo-color);
+    margin-left: 217px;
+    margin-top: 44px;
+    margin-right: 137px;
+    margin-bottom: 50px;
+    }
