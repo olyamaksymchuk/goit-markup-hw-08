@@ -30,9 +30,6 @@ p, h1, h2, h3 {margin: 0}
 
 a { text-decoration: none;}
 
-.nav-link.current{color: var(--accent-color);
-}
-
 .section { 
     padding-top: 94px;
     padding-bottom: 94px;}
@@ -94,25 +91,32 @@ a { text-decoration: none;}
 .nav { display: flex;
     align-items: center;
     gap: 50px;
-    ;
     }
 
 .nav-link { display: block;
+    font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    font-weight: 500;
-    padding: 32px 0;
-    order: 2;}
+    padding: 32px 2px;
+    position: relative;}
 
 .nav-link:hover,
 .nav-link:focus
-{   color: var(--accent-color);}
+    {color: var(--accent-color);
+    
 
-.nav-item::after {
+}    
+
+.nav-link.current::after{
     content: '';
+    display: block;
     background-color: var(--accent-color);
-    width: 48px;
-    height: 1px;
+    border-radius: 2px;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -1px;
+    left: 0;
 }
 
 .contacts { display: flex;
@@ -141,7 +145,8 @@ a { text-decoration: none;}
 
 .header-contact-link:hover,
 .header-contact-link:focus{
-    color: var(--accent-color);}
+    color: var(--accent-color);
+    }
 
 /*головне*/
 
@@ -193,7 +198,7 @@ a { text-decoration: none;}
 .button:hover 
 .button:focus {
     background-color: #188CE8;
-}
+    }
 
 /* модальне вікно*/
 
@@ -397,6 +402,7 @@ img {max-width: 370px;
 .members-soc-link:hover,
 .members-soc-link:focus{
     background-color: var(--accent-color);
+    
 }
 
 .members-soc-icon { 
@@ -405,7 +411,8 @@ img {max-width: 370px;
 
 .members-soc-link:hover .members-soc-icon,
 .members-soc-link:focus .members-soc-icon{
-    fill: var(--font-color);}
+    fill: var(--font-color);
+    }
 
 /* Clients*/
 
@@ -441,7 +448,9 @@ img {max-width: 370px;
 .client-item-link:hover, 
 .client-item-link:focus{
     border-color: var(--accent-color);
-    fill: var(--accent-color);}
+    fill: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);}
     
     
 
@@ -502,8 +511,9 @@ img {max-width: 370px;
 .mail-down:focus,
 .tel:hover,
 .tel:focus {
-    color: var(--accent-color)
-}
+    color: var(--accent-color);
+    }
+
 .foot-info {display: flex;
     gap: 70px;
     align-items: baseline;
@@ -543,6 +553,7 @@ img {max-width: 370px;
 .social-link:hover,
 .social-link:focus{
     background-color: var(--accent-color);
+    
 }
 
 /*Портфоліо мейн*/
@@ -582,7 +593,8 @@ img {max-width: 370px;
     color: var(--font-color);
     box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1),
     0 1px 2px rgba(0, 0, 0, 0.08),
-    0 2px 2px rgba(0, 0, 0, 0.12)}
+    0 2px 2px rgba(0, 0, 0, 0.12);
+    }
 
 .btn-primary {
     background-color: var(--accent-color);
@@ -598,7 +610,8 @@ img {max-width: 370px;
     border: 1px solid #FFFFFF;
     }
 
-.gallery-item:hover .overlay {opacity: 1;}
+.gallery-item:hover .overlay {opacity: 1;
+    }
 
 .gallery-link {display: block;
 }
@@ -607,7 +620,8 @@ img {max-width: 370px;
 .gallery-link:focus{
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
     0 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16)}
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 
 img {display: block; 
     width: 370;
@@ -634,6 +648,18 @@ img {display: block;
 
 .gallery-item-wrap {position: relative;
     }
+
+.gallery-item-wrap::before {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+}
 
 .overlay {position: absolute;
     top: 0;
