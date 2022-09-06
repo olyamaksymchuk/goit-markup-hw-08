@@ -344,7 +344,7 @@
             <address>
                 <p class="adr">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="contacts-down list">
-                <li><a class="mail-down" href="http://info@example.com" >info@example.com</a></li>
+                <li class="mail-list"><a class="mail-down" href="http://info@example.com" >info@example.com</a></li>
                 <li><a class="tel" href="tel:+380961111111" >+38 096 111 11 11</a></li>
             </ul> 
             </address>
@@ -381,10 +381,30 @@
                 </a>
             </li>
             </ul>
+        </div> 
         </div>
-        </div>
+        <form class=".js-speaker-form'">
+            <label for="name">підпишіться на розсилку</label>
+            <input type="text" name="name" id="name">
+            <label for="mail"></label>
+            <input type="email" name="mail" id="mail">
+            <button type="submit">Підписатися</button>
+    </form>
     </footer>
     <script src="./js/modal.js"></script>
+    <script>
+    (() => {
+        document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+                console.log(`${name}: ${value}`),
+            );
+
+            e.currentTarget.reset();
+        });
+    })();
+</script>
 </body>
     </body>
 </html>
