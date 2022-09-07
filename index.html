@@ -54,6 +54,31 @@
                             <use href="./images/icons.svg#icon-close-black-18dp-2-11"></use>
                         </svg>
                     </button>
+                    <div class="backdrop">
+                        <form class="backdrop .js-speaker-form'">
+                    <h1 class="backdrop-title">Залиште свої дані, ми вам передзвонимо</h1>
+                    <div class="backdrop-field">   
+                    <label for="name">Ім'я</label>
+                        <input type="text" name="username" id="name">
+                    </div> 
+                    <div class="backdrop-field">
+                        <label for="tel">Телефон</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+                    <div class="backdrop-field">
+                        <label for="mail">Пошта</label>
+                        <input type="email" name="mail" id="mail">
+                    </div>
+                    <div class="backdrop-field">    
+                        <label for="textarea">Коментар</label> 
+                        <input type="text" name="textarea" placeholder="Введіть текст"/>
+                    </div>  
+                    <div class="backdrop-field">
+                        <input type="checkbox" name="checkbox" id="checkbox"/>
+                        <label for="checkbox">Погоджуюся з розсилкою та приймаю Умови договору</label>
+                    </div>    
+                        <button type="submit" class="backdrop-field-btn">Відправити</button>
+                        </form>
                 </div>
             </div>
         </section>
@@ -338,19 +363,19 @@
         </section>
     </main>
     <footer class="down section">
-        <div class="foot-info container">
-            <div>
+        <div class="container down-info">
+            <div class="down-info-link">
             <a class="web-down" href="http://webstudio.html" lang="en">Web<span class="studio-foot">Studio</span></a> 
             <address>
                 <p class="adr">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="contacts-down list">
-                <li class="mail-list"><a class="mail-down" href="http://info@example.com" >info@example.com</a></li>
+                <li class="mail-list"><a class="mail-down" href="http://info@example.com">info@example.com</a></li>
                 <li><a class="tel" href="tel:+380961111111" >+38 096 111 11 11</a></li>
             </ul> 
             </address>
         </div>
         <div class="social-links">
-            <p class="social-links-title">приєднуйтесь</p>
+            <h3 class="social-links-title">приєднуйтесь</h3>
                 <ul class="social-list list">
                 <li class="social-links-item">
                     <a href="" class="social-link">
@@ -382,14 +407,16 @@
             </li>
             </ul>
         </div> 
-        </div>
+        <div class="forma">
         <form class=".js-speaker-form'">
-            <label for="name">підпишіться на розсилку</label>
-            <input type="text" name="name" id="name">
+            <p class="forma-text">підпишіться на розсилку</p>
+            <div class="forma-mail">
             <label for="mail"></label>
-            <input type="email" name="mail" id="mail">
-            <button type="submit">Підписатися</button>
+            <input class="forma-mail" type="email" name="mail" placeholder="E-mail">
+            <button type="submit" class="forma-btn">Підписатися</button>
+        </div>
     </form>
+    </div>
     </footer>
     <script src="./js/modal.js"></script>
     <script>
