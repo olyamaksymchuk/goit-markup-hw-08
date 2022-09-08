@@ -54,6 +54,9 @@ a { text-decoration: none;}
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+textarea {resize: none;}
+
 /*лого*/
 .web {font-family: 'Raleway';
     color: var(--accent-color);
@@ -188,8 +191,8 @@ a { text-decoration: none;}
     font-weight: 700;
     background-color: var(--accent-color);
     color: var(--font-color);
-    Font-size: 16px;
-    Line-height: 1.9;
+    font-size: 16px;
+    line-height: 1.9;
     cursor: pointer;
     display: inline-block;
     text-align: center;
@@ -228,11 +231,11 @@ a { text-decoration: none;}
     pointer-events: none;
     visibility: hidden}
 
-.backdrop.is-hidden .modal{
+.backdrop.is-hidden .overlay{
     transform: translate(-50%, -50%) scale(1.1) ;
     }
 
-.modal { 
+.overlay { position: absolute;
     top: 50%;
     left: 50%;
     width: 528px;
@@ -246,7 +249,7 @@ a { text-decoration: none;}
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-.btn-item-modal {width: 30px;
+.btn-item-overlay {width: 30px;
     height: 30px;
     border-radius: 50%;
     display: flex;
@@ -259,14 +262,124 @@ a { text-decoration: none;}
     right: 8px;
 }
 
-.backdrop {;
+.modal-title {margin-top: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    }
 
-    width: 528px;
-    height: 581px;
-    background-color: #fff;
+.modal-form {display: block;
+    width: 448px;
+    height: 342px;
+    background-color: var(--font-color);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    margin-top: 12px;
+    margin-left: 40px;
+}
+
+.modal-form-field {
+    width: 448px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.modal-form-field label { font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin: 4px;
+}
+.modal-form-field input {width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    transform: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+.modal-form-field input:hover,
+.modal-form-field input:focus {outline-color: var(--accent-color);}
+
+.input-wrap {position: relative;}
+
+.modal-form-icon {position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-field:focus ~ .modal-form-icon {fill: var(--accent-color);}
+
+.modal-form-field input::placeholder{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin: 12px 16 px;
+}
+.comment {}
+
+.checkbox-text {font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--contact-color);
+}
+
+.checkbox-text span {width: 16px;
+    height: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    fill: solid #212121;
+    display: block;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-icon {position: absolute;
+    fill: #212121;
+
 
 }
 
+.modal-form-link {
+    color: var(--accent-color);
+    text-decoration-line: underline;
+    border: 1px solid transparent;
+}
+
+
+.form-field-btn {    
+    background: var(--accent-color);
+    color: var(--font-color);
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /*Список послуг*/
 
@@ -715,7 +828,7 @@ img {display: block;
         opacity: 0;
         transform: translateY(100%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-                    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
         
         
