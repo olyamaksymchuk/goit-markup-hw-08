@@ -224,7 +224,8 @@ textarea {resize: none;}
     background-color: rgba(0, 0, 0, 0.1);
     opacity: 1;
     visibility: visible;
-    transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), 
+    transition:  transform 300ms cubic-bezier(0.4, 0, 0.2, 1), 
+    opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), 
     visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .backdrop.is-hidden {opacity:0;
@@ -261,8 +262,29 @@ textarea {resize: none;}
     top: 8px;
     right: 8px;
 }
+.btn-icone { display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px;
+    fill: #000000;
+}
 
-.modal-title {margin-top: 40px;
+.bt-item-link {width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn-icone:hover,
+.btn-icone:focus {
+    fill: #2196F3
+}
+
+.modal-title {
+    margin-top: 40px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -282,12 +304,29 @@ textarea {resize: none;}
     margin-left: 40px;
 }
 
+.modal-input {width: 100%;
+    height: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;       
+    letter-spacing: 0.01em;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
 .modal-form-field {
     width: 448px;
+    border: 1px solid transparent;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+}
+.modal-input:focus {
+    outline-color: var(--accent-color);
+}
+.modal-input:focus + .modal-form-icon{
+    fill: var(--accent-color);
 }
 .modal-form-field label { font-style: normal;
     font-weight: 400;
@@ -305,9 +344,6 @@ textarea {resize: none;}
     transform: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-.modal-form-field input:hover,
-.modal-form-field input:focus {outline-color: var(--accent-color);}
-
 .input-wrap {position: relative;}
 
 .modal-form-icon {position: absolute;
@@ -316,46 +352,65 @@ textarea {resize: none;}
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-field:focus ~ .modal-form-icon {fill: var(--accent-color);}
 
-.modal-form-field input::placeholder{
-    font-style: normal;
+.textarea-comment {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.2;
     letter-spacing: 0.01em;
-    color: #757575;
-    margin: 12px 16 px;
+    color: rgba(117, 117, 117, 0.5);
+    padding: 12px 16px;
 }
-.comment {}
+.textarea-comment:focus {
+    outline-color: var(--accent-color);
+}
 
+.modal-form-field:nth-child(4) {
+    margin-bottom: 20px;
+}
+
+.modal-form-field:nth-child(5) {
+    margin-bottom: 30px;
+}
 .checkbox-text {font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--contact-color);
+    display: flex;
 }
+.checkbox-icon {
+    fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.checkbox-text span {width: 16px;
-    height: 15px;
+.checkbox-text span {
     border-radius: 4px;
     cursor: pointer;
-    fill: solid #212121;
-    display: block;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--primary-text-color);
+    border-radius: 2px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-icon {position: absolute;
-    fill: #212121;
 
-
+.input-check:focus + .checkbox-text span {
+    border-color:#2196F3;
+    background-color: #2196F3;
 }
-
+.input-check:checked + .checkbox-text .checkbox-icon {
+    fill:#FFFFFF
+}
 .modal-form-link {
     color: var(--accent-color);
     text-decoration-line: underline;
     border: 1px solid transparent;
 }
-
 
 .form-field-btn {    
     background: var(--accent-color);
@@ -838,7 +893,7 @@ img {display: block;
 
 /* підпишись форма у футер form*/
 
-.forma {display: flex;
+.forma {
     width: 570px;
     height: 86px;
     margin-left: auto
@@ -851,27 +906,36 @@ img {display: block;
     text-transform: uppercase;
     color: var(--font-color);
     margin-bottom: 20px;
-        }
+    }
 
-.forma-mail {display: flex;}     
-.forma-mail input {
+.forma-mail {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background-color:transparent;
+    background-color: transparent;
     padding-left: 16px;
     outline: none;
     color: #FFFFFF;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    .forma-mail:hover,
+    .forma-mail:focus {
+        border-color: #2196F3;
+    }
+    
+.forma-letter {display: flex;}
+
+.forma-submit {position: relative;}
+
 .forma-btn {
     align-items: center;
     text-align: center;
     width: 200px;
     padding: 10px 28px;
+    padding-right: 62px;
     margin-left: 12px;
     font-weight: 700;
     font-size: 16px;
@@ -883,3 +947,11 @@ img {display: block;
     outline: none;
     border: none;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.submit-icon {background-color: #2196F3;
+    fill: var(--font-color);
+    position: absolute;
+    top:50%;
+    right: 30px;
+    transform: translateY(-50%); 
+}
