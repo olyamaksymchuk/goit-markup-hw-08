@@ -16,6 +16,7 @@ html {
   --hero-font: #2f303a;
   --team-font: #f5f4fa;
   --icon-color: #afb1b8;
+  --transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -123,7 +124,7 @@ textarea {
   position: relative;
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--transition);
 }
 
 .nav-link:hover,
@@ -166,7 +167,7 @@ textarea {
   padding-bottom: 32px;
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--transition);
 }
 
 .header-icon {
@@ -235,7 +236,7 @@ textarea {
   border-color: #188ce8;
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--transition);
 }
 
 .button:hover .button:focus {
@@ -253,9 +254,9 @@ textarea {
   background-color: rgba(0, 0, 0, 0.1);
   opacity: 1;
   visibility: visible;
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 300ms var(--transition),
+    opacity 300ms var(--transition),
+    visibility 300ms var(--transition);
 }
 
 .backdrop.is-hidden {
@@ -273,14 +274,14 @@ textarea {
   top: 50%;
   left: 50%;
   width: 528px;
-  height: 581px;
-  padding: 40px 75px 40px 74px;
+  min-height: 581px;
+  padding: 40px;
   background-color: var(--font-color);
   border-radius: 4px;
   box-shadow: 0px 1 px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--transition);
 }
 
 .btn-item-modal {
@@ -300,45 +301,33 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffffff;
+  background: var(--font-color);
   border: 1px;
-  fill: #000000;
-}
-
-.bt-item-link {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  fill: #000000; 
 }
 
 .btn-icone:hover,
 .btn-icone:focus {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 
-.modal-title {
-  margin-top: 40px;
+.modal-title {  
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
+  margin-bottom: 12px;
 }
 
 .modal-form {
   display: block;
-  width: 448px;
-  height: 342px;
   background-color: var(--font-color);
   border-radius: 4px;
   border: 1px solid transparent;
-  margin-top: 12px;
-  margin-left: 40px;
-}
+  }
 
 .modal-input {
   width: 100%;
@@ -353,7 +342,6 @@ textarea {
 }
 .modal-form-field {
   width: 448px;
-  border: 1px solid transparent;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -371,7 +359,7 @@ textarea {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: #757575;
+  color:var(--contact-color);
   margin: 4px;
 }
 .modal-form-field input {
@@ -380,10 +368,10 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-  transform: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms var(--transition);
 }
 
-.input-wrap {
+.modal-input-wrap {
   position: relative;
 }
 
@@ -392,7 +380,7 @@ textarea {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--transition);
 }
 
 .textarea-comment {
@@ -415,41 +403,45 @@ textarea {
   margin-bottom: 20px;
 }
 
-.modal-form-field:nth-child(5) {
+.modal-form-field-checkbox {
+  width: 100%;
   margin-bottom: 30px;
+  }
+
+.checkbox-icon {
+  fill: transparent;
+  transition: fill 250ms var(--transition);
+  margin-right: 7px;
 }
-.checkbox-text {
+.checkbox-text {display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--contact-color);
-  display: flex;
-}
-.checkbox-icon {
-  fill: transparent;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  margin-left: 7px;
+   }
 
-.checkbox-text span {
+.checkbox-text span { 
   border-radius: 4px;
   cursor: pointer;
   border: 1px solid var(--primary-text-color);
   border-radius: 2px;
-  margin-right: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--transition);
 }
 
-.input-check:focus + .checkbox-text span {
-  border-color: #2196f3;
-  background-color: #2196f3;
+.input-check:checked + .checkbox-text span {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
+
+
 .input-check:checked + .checkbox-text .checkbox-icon {
-  fill: #ffffff;
+  fill: var(--font-color);
 }
+
+
 .modal-form-link {
   color: var(--accent-color);
   text-decoration-line: underline;
@@ -461,7 +453,6 @@ textarea {
   color: var(--font-color);
   width: 200px;
   height: 50px;
-  margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
@@ -477,8 +468,8 @@ textarea {
   text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--transition),
+    box-shadow 250ms var(--transition);
 }
 
 /*Список послуг*/
@@ -668,7 +659,7 @@ img {
   justify-content: center;
   transition-property: background-color, fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--transition);
 }
 
 .members-soc-link:hover,
@@ -719,7 +710,7 @@ img {
   height: 92px;
   transition-property: fill, border-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--transition);
 }
 
 .client-item-link:hover,
@@ -797,7 +788,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--transition);
 }
 
 .mail-down:hover,
@@ -844,7 +835,7 @@ img {
   height: 44px;
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--transition);
 }
 
 .social-links-icon {
@@ -894,7 +885,7 @@ img {
   padding-right: 22px;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--transition);
 }
 
 .btn:hover,
@@ -921,14 +912,14 @@ img {
   border: 1px solid #ffffff;
   transition-property: opacity;
   transition-delay: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--transition);
 }
 
 .gallery-link {
   display: block;
   transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--transition);
 }
 
 .gallery-link:hover,
@@ -986,8 +977,8 @@ img {
   padding-left: 24px;
   opacity: 0;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--transition),
+    opacity 250ms var(--transition);
 }
 
 .gallery-link:hover .gallery-overlay,
@@ -1023,13 +1014,13 @@ img {
   background-color: transparent;
   padding-left: 16px;
   outline: none;
-  color: #ffffff;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--font-color);
+  transition: border-color 250ms var(--transition);
 }
 
 .forma-mail:hover,
 .forma-mail:focus {
-  border-color: #2196f3;
+  border-color: var(--accent-color);
 }
 
 .forma-letter {
@@ -1037,7 +1028,7 @@ img {
   justify-content: baseline;
 }
 
-.forma-btn {
+.forma-btn {display: flex;
   align-items: center;
   text-align: center;
   width: 200px;
@@ -1048,18 +1039,19 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--font-color);
   background: var(--accent-color);
   border-radius: 4px;
   outline: none;
   border: none;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--transition),
+    box-shadow 250ms var(--transition);
 }
 
 .submit-icon {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   fill: var(--font-color);
-  display: inline-block;
-  margin: 10px 13px 8px 13px;
+  align-self: center;
+  justify-content: baseline;
+  margin-left: 10px;
 }
