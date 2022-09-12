@@ -403,7 +403,9 @@ textarea {
   margin-bottom: 20px;
 }
 
-.modal-form-field-checkbox {
+.modal-form-field-checkbox {display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   margin-bottom: 30px;
   }
@@ -411,24 +413,28 @@ textarea {
 .checkbox-icon {
   fill: transparent;
   transition: fill 250ms var(--transition);
-  margin-right: 7px;
 }
+
 .checkbox-text {display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 400;
+  color: var(--contact-color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin-left: 7px;
-   }
+  }
 
 .checkbox-text span { 
-  border-radius: 4px;
+  width: 16px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7px;
   cursor: pointer;
   border: 1px solid var(--primary-text-color);
   border-radius: 2px;
-  transition: background-color 250ms var(--transition);
+  transition: background-color 250ms var(--transition)
+  border-color 250ms var(--transition);
 }
 
 .input-check:checked + .checkbox-text span {
@@ -436,11 +442,9 @@ textarea {
   background-color: var(--accent-color);
 }
 
-
 .input-check:checked + .checkbox-text .checkbox-icon {
   fill: var(--font-color);
 }
-
 
 .modal-form-link {
   color: var(--accent-color);
