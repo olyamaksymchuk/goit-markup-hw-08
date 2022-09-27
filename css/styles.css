@@ -178,7 +178,7 @@ img {
   margin-bottom: 20px;
 }
 
-.email-input__form {
+.email-input__label {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -192,16 +192,16 @@ img {
 }
 
 .email-input__form:hover,
-.email-input__forml:focus {
+.email-input__form:focus {
   border-color: var(--accent-color);
 }
 
-.email-input__form {
+.email-input__form{
   display: flex;
   align-items: baseline;
 }
 
-.forma-btn {display: flex;
+.email-input__btn {display: flex;
   align-items: center;
   text-align: center;
   width: 200px;
@@ -220,7 +220,7 @@ img {
     box-shadow 250ms var(--transition);
   }
 
-.submit-icon {
+.email-input__icon {
   background-color: var(--accent-color);
   fill: var(--font-color);
   align-self: center;
