@@ -9,32 +9,33 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="./css/main.min.css"/>
         <link rel="stylesheet" href="./css/styles.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
-    <header class="head section">
-        <div class="logo container">
-                    <a class="web" href="" lang="en">Web<span class="studio">Studio</span></a>                      
+    <header class="page-header">
+        <div class="container page-header__container">
+                    <a class="logo page-header__logo" href="" lang="en">Web<span class="studio">Studio</span></a>                      
         <nav>
-            <ul class="nav list">
-                <li class="nav-item"><a href="./index.html" class="nav-link current">Студія</a></li>
-                <li><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
-                <li><a href="" class="nav-link">Контакти</a></li>
+            <ul class="navigation list">
+                <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--current">Студія</a></li>
+                <li><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
+                <li><a href="" class="navigation__link">Контакти</a></li>
             </ul>            
         </nav>
-        <ul class="contacts list ">     
-                <li class="contact">
-                    <a class="header-contact-link" href="http://info@devstudio.com">
-                <svg class="header-icon" width="16" height="12">
+        <ul class="connect list">     
+                <li>
+                    <a class="connect__link" href="http://info@devstudio.com">
+                <svg class="connect__icon" width="16" height="12">
                     <use href="./images/icons.svg#icon-envelope1">
                     </use>
                 </svg>info@devstudio.com</a></li>
-                <li class="contact">
-                        <a class="header-contact-link" href="tel:+380961111111">
-                <svg class="header-icon" width="10" height="16">
+                <li>
+                        <a class="connect__link" href="tel:+380961111111">
+                <svg class="connect__icon" width="10" height="16">
                     <use href="./images/icons.svg#icon-smartphone1">
                     </use>
                     </svg>+38 096 111 11 11</a></li>
@@ -42,97 +43,97 @@
     </div>     
     </header>
     <main>
-        <section class="hero section">
+        <section class="page-hero">
             <div class="container">
-                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button data-modal-open class="button" type="button">Замовити послугу</button>
+                <h1 class="page-hero__title">Ефективні рішення для вашого бізнесу</h1>
+            <button data-modal-open class="page-hero__button" type="button">Замовити послугу</button>
             </div>
         </section>
-        <section class="section offer">
-            <div class="container">
+        <section class="section">
+            <div class="container ">
             <h2 class="visually-hidden">Список послуг</h2>
-                <ul class="offers-list list">
-                <li class="offer-item">
-                    <div class="benefit">
-                <svg class="benefit-item" width="70" height="70">
+                <ul class="offers list">
+                <li class="offers__item">
+                    <div class="offers__box">
+                <svg class="offers__icon" width="70" height="70">
                     <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
                     </div>
-                    <h3 class="offer-item-title">увага до деталей</h3> 
-                    <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                    <h3 class="offers__title">увага до деталей</h3> 
+                    <p class="offers__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                 </li>
-                <li  class="offer-item">
-                    <div class="benefit">
-                        <svg class="benefit-item" width="70" height="70">
+                <li  class="offers__item">
+                    <div class="offers__box">
+                        <svg class="offers__icon" width="70" height="70">
                             <use href="./images/icons.svg#icon-clock-11"></use>
                         </svg>
                     </div>
-                    <h3 class="offer-item-title">пунктуальність</h3> 
-                    <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    <h3 class="offers__title">пунктуальність</h3> 
+                    <p class="offers__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                 </li>
-                <li  class="offer-item">
-                    <div class="benefit">
-                        <svg class="benefit-item" width="70" height="70">
+                <li  class="offers__item">
+                    <div class="offers__box">
+                        <svg class="offers__icon" width="70" height="70">
                             <use href="./images/icons.svg#icon-diagram-1"></use>
                         </svg>
                     </div>
-                    <h3 class="offer-item-title">планування</h3> 
-                    <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    <h3 class="offers__title">планування</h3> 
+                    <p class="offers__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
-                <li class="offer-item">
-                    <div class="benefit">
-                        <svg class="benefit-item" width="70" height="70">
+                <li class="offers__item">
+                    <div class="offers__box">
+                        <svg class="offers__icon" width="70" height="70">
                             <use href="./images/icons.svg#icon-astronaut-1"></use>
                         </svg>
                     </div>
-                    <h3 class="offer-item-title">сучасні технології</h3> 
-                    <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    <h3 class="offers__item">сучасні технології</h3> 
+                    <p class="offers__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
             </ul>
         </div>
         </section>
-        <section class="product section">
+        <section class="section section__no padding top">
             <div class="container">
-            <h2 class="products-title">Чим ми займаємося</h2>
+            <h2 class="section__title">Чим ми займаємося</h2>
             <ul class="products list">
-                <li class="products-item"><img src="./images/about1.jpg" 
+                <li class="products__item"><img src="./images/about1.jpg" 
                     alt="розробка програмного забезпечення"
                     width="370"
                     height="294">
-                    <div class="box">
-                    <p class="box-label">десктопні додатки</p>
+                    <div class="products__box">
+                    <p class="products__text">десктопні додатки</p>
                 </div>
                 </li>
                 
-                <li class="products-item"><img src="./images/about2.jpg" 
+                <li class="products__item"><img src="./images/about2.jpg" 
                     alt="тестування мобільного забезпечення"
                     width="370"
                     height="294">
-                    <div class="box">
-                        <p class="box-label">мобільні додатки</p>
+                    <div class="products__box">
+                        <p class="products__text">мобільні додатки</p>
                     </div>
                 </li>
-                <li class="products-item"><img src="./images/about3.jpg" 
+                <li class="products__item"><img src="./images/about3.jpg" 
                     alt="робота з палітрою кольорів"
                     width="370"
                     height="294">
-                    <div class="box">
-                        <p class="box-label">дизайнерські рішення</p>
+                    <div class="products__box">
+                        <p class="products__text">дизайнерські рішення</p>
                     </div>
                 </li>
             </ul>
         </div>
         </section>
-        <section class="team section">
+        <section class="section team__section">
             <div class="container">
-            <h2 class="team">Наша команда</h2>
-            <ul class="members list">
-                <li class="member"><img src="./images/designer.jpg" 
+            <h2 class="section__title">Наша команда</h2>
+            <ul class="team list">
+                <li class="team__item"><img src="./images/designer.jpg" 
                     alt="Product designer"
                     width="270"
                     height="260">
                     <div class="people">
-                    <h3 class="name">Ігор Дем'яненко</h3>
+                    <h3 class="team__title">Ігор Дем'яненко</h3>
                     <p class="position" lang="en">Product designer</p>
                     <ul class="members-soc list">
                         <li class="members-soc-item">
@@ -331,7 +332,7 @@
     <footer class="down section">
         <div class="container down-info">
             <div class="down-info-link">
-            <a class="web-down" href="http://webstudio.html" lang="en">Web<span class="studio-foot">Studio</span></a> 
+            <a class="logo" href="http://webstudio.html" lang="en">Web<span class="studio studio--color-light">Studio</span></a> 
             <address>
                 <p class="adr">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="contacts-down list">
@@ -391,87 +392,87 @@
 <!--is hidden modal-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-                <button type="button" class="btn-item-modal" data-modal-close>
-                    <svg class="btn-icon" width="18" height="18">
+                <button type="button" class="modal__button" data-modal-close>
+                    <svg class="modal__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-close-black-18dp-2-1-1-1"></use>
                     </svg>
                 </a>
                 </button>
-            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="modal-form">
-            <div class="modal-form-field">
-                <label class="modal-form-title" for="name">Ім'я</label>
-                <div class="modal-input-wrap">
+            <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-box">
+            <div class="modal-box__field">
+                <label class="modal-box__title" for="name">Ім'я</label>
+                <div class="modal-input__wrap">
                     <input 
                         type="text" 
                         name="username" 
                         id="name" 
                         class="modal-input">
-                <svg class="modal-form-icon"
+                <svg class="modal-input__icon"
                          width="18" height="18"> 
                     <use href="./images/icons.svg#icon-person-black-18dp-1-1"></use>
                 </svg>
                 </div>
                 </div> 
-                <div class="modal-form-field">
-                    <label class="modal-form-title" for="tel">Телефон</label>
-                <div class="modal-input-wrap">
+                <div class="modal-box__field">
+                    <label class="modal-box__title" for="tel">Телефон</label>
+                <div class="modal-input__wrap">
                     <input 
                         type="tel" 
                         name="tel" 
                         id="tel" 
                         class="modal-input">
-                    <svg class="modal-form-icon" 
+                    <svg class="modal-input__icon" 
                         width="18" 
                         height="18">
                         <use href="./images/icons.svg#icon-phone-black-18dp-1-1"></use>
                     </svg>
                 </div>
                 </div>
-                <div class="modal-form-field">
-                    <label for="mail" class="modal-form-title">Пошта</label>
-                <div class="modal-input-wrap">
+                <div class="modal-box__field">
+                    <label for="mail" class="modal-box__title">Пошта</label>
+                <div class="modal-input__wrap">
                     <input 
                         type="email" 
                         name="mail" 
                         id="mail" 
                         class="modal-input">
-                    <svg class="modal-form-icon" 
+                    <svg class="modal-input__icon" 
                         width="18" 
                         height="18">
                         <use href="./images/icons.svg#icon-email-black-18dp-1-1"></use>
                     </svg>
                 </div> 
                 </div>
-                <div class="modal-form-field">    
-                    <label for="comment" class="modal-form-title">Коментар</label> 
+                <div class="modal-box__field">    
+                    <label for="comment" class="modal-box__title">Коментар</label> 
                     <textarea 
                         name="comment" 
                         id="comment" 
-                        class="textarea-comment" 
+                        class="modal-box__textarea" 
                         placeholder="Введіть текст"
                     ></textarea>
                 </div>  
-                <div class="modal-form-field">
+                <div class="modal-checkbox">
                     <input 
                         class="input-check visually-hidden" 
                         type="checkbox" 
                         name="user-policy" 
                         value="true"  
                         id="user-policy"/>
-                    <label class="checkbox-text" for="user-policy">
+                    <label class="checkbox__text" for="user-policy">
                         <span>
-                        <svg class="checkbox-icon"
+                        <svg class="checkbox__icon"
                                 width="16" 
                                 height=15>
                             <use href="./images/icons.svg#icon-Vector-2-1"></use>                            </use>
                             </svg>
                         </span>
                         Погоджуюся з розсилкою та приймаю  
-                        <a class="modal-form-link" href="#"> Умови договору</a></h3>    
+                        <a class="modal-box__link" href="#"> Умови договору</a></h3>    
                      </label>
                 </div>    
-                    <button type="submit" class="form-field-btn">Відправити</button>
+                    <button type="submit" class="form-box__btn">Відправити</button>
                     </form>
             </div>
     <script src="./js/modal.js"></script>
