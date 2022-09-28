@@ -21,21 +21,15 @@
 
 .team__title {
   color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
+  @include fonts(500, 16px, 1.2, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
 
 .team__text {
   color: var(--contact-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.2;
+  @include fonts(400, 16px, 1.2, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
 

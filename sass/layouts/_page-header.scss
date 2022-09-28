@@ -12,23 +12,17 @@
 }
 
 .page-header__container {
-  display: flex;
-  align-items: center;
+  @extend %flex;
 }
 
 .connect {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex;
   margin-left: auto;
   gap: 30px;
 }
 
 .connect__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
+  @include fonts(500, 14px, 1.1, 0.02em);
   color: var(--contact-color);
   padding-top: 32px;
   padding-bottom: 32px;

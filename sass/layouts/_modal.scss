@@ -40,9 +40,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 1);
   position: absolute;
@@ -52,9 +50,7 @@
 }
 
 .modal__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex;
   background: var(--font-color);
   border: 1px;
   fill: #000000;
@@ -67,11 +63,8 @@
 
 .modal__title {
   font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+  @include fonts(700, 20px, 1.15, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 12px;
 }
@@ -87,10 +80,7 @@
   width: 100%;
   height: 40px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
+  @include fonts(400, 12px, 1.2, 0.01em);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -104,10 +94,7 @@
 
 .modal-box__title {
   font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  @include fonts(400, 12px, 1.16, 0.01em);
   color: var(--contact-color);
   margin-bottom: 4px;
 }
@@ -145,10 +132,7 @@
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
+  @include fonts(400, 12px, 1.2, 0.01em);
   color: rgba(117, 117, 117, 0.5);
   resize: none;
   padding: 12px 16px;
@@ -163,9 +147,7 @@
 }
 
 .modal-checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -176,22 +158,15 @@
 }
 
 .checkbox__text {
-  display: flex;
-  font-weight: 400;
+  @extend %flex;
   color: var(--contact-color);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  justify-content: center;
-  align-items: center;
+  @include fonts(400, 14px, 1.7, 0.03em);
 }
 
 .checkbox__text span {
   width: 16px;
   height: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex;
   margin-right: 7px;
   cursor: pointer;
   border: 1px solid var(--primary-text-color);
@@ -222,18 +197,13 @@
   height: 50px;
   margin-right: auto;
   margin-left: auto;
-  justify-content: center;
   border-radius: 4px;
   border: none;
   outline: none;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  display: flex;
-  align-items: center;
+  @include fonts(700, 16px, 1.9, 0.06em);
+  @extend %flex;
   text-align: center;
-  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: transform 250ms var(--transition),
     box-shadow 250ms var(--transition);

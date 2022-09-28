@@ -1,7 +1,28 @@
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  //mobile styles
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  //tablet styles
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  //desktop styles
+  @media screen and (max-width: 1200px) {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }

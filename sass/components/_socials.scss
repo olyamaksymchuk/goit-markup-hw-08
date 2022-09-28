@@ -1,6 +1,5 @@
 .socials {
-  display: flex;
-  justify-content: center;
+  @extend %flex;
   gap: 10px;
 }
 
@@ -9,9 +8,7 @@
   height: 44px;
   border-radius: 50%;
   background-color: var(--font-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex;
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--transition);

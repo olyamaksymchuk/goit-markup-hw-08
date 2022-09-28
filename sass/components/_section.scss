@@ -4,10 +4,7 @@
 }
 
 .section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  @include fonts(700, 36px, 1.2, 0.03em);
   color: var(--primary-text-color);
   text-align: center;
 }

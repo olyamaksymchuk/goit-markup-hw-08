@@ -22,9 +22,7 @@ img {
 }
 
 .products__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex;
   position: absolute;
   font-weight: 700;
   bottom: 0;
@@ -37,9 +35,7 @@ img {
 
 .products__text {
   color: var(--font-color);
-  font-size: 14px;
-  line-height: 1.1;
+  @include fonts(null, 14px, 1.1, 0.03em);
   text-transform: uppercase;
-  letter-spacing: 0.03em;
   text-align: center;
 }

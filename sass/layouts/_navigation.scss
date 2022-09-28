@@ -1,6 +1,5 @@
 .navigation {
-  display: flex;
-  align-items: center;
+  @extend %flex;
   gap: 50px;
 }
 
