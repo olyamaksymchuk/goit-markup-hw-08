@@ -77,3 +77,70 @@
 .footer-socials__icon:focus {
   background-color: var(--accent-color);
 }
+
+/* підпишись форма у футер form*/
+
+.email-input {
+  width: 570px;
+  margin-left: auto;
+}
+
+.email-input__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--font-color);
+  margin-bottom: 20px;
+}
+
+.email-input__box {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  outline: none;
+  color: var(--font-color);
+  transition: border-color 250ms var(--transition);
+}
+
+.email-input_box:hover,
+.email-input__box:focus {
+  border-color: var(--accent-color);
+}
+
+.email-input__form {
+  display: flex;
+  align-items: baseline;
+}
+
+.email-input__btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  padding: 10px 28px;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--font-color);
+  background: var(--accent-color);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  transition: transform 250ms var(--transition),
+    box-shadow 250ms var(--transition);
+}
+
+.email-input__icon {
+  background-color: var(--accent-color);
+  fill: var(--font-color);
+  align-self: center;
+  margin-left: 10px;
+}

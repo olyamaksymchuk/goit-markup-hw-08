@@ -1,3 +1,4 @@
+@charset "UTF-8";
 p,
 h1,
 h2,
@@ -224,6 +225,145 @@ textarea {
 .page-hero__button:hover,
 .page-hero__button:focus {
   background-color: #188ce8;
+}
+
+.portfolio__section {
+  background-color: var(--font-color);
+}
+
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.portfolio-buttons__item {
+  margin-right: 8px;
+}
+
+.portfolio-buttons__item:last-child {
+  margin-right: 0;
+}
+
+.portfolio-buttons__text {
+  font-family: inherit;
+  background-color: #f5f4fa;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition);
+  cursor: pointer;
+}
+
+.portfolio-buttons__text:hover,
+.portfolio-buttons__text:focus {
+  background-color: var(--accent-color);
+  color: var(--font-color);
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-buttons__text-primary {
+  background-color: var(--accent-color);
+  color: var(--font-color);
+}
+
+.gallery {
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery__item {
+  flex-basis: calc((100% - 60px) / 3);
+  border: 1px solid #ffffff;
+  transition-property: opacity;
+  transition-delay: 250ms;
+  transition-timing-function: var(--transition);
+  cursor: pointer;
+}
+
+.gallery__link {
+  display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition);
+}
+
+.gallery__link:hover,
+.gallery__link:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.galery__img {
+  display: block;
+  width: 370;
+  width: 100%;
+}
+
+.gallery__title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.gallery__wrap {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+
+.gallery__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--contact-color);
+}
+
+.gallery__wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery__overlay {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  top: 0;
+  left: 0;
+  color: var(--font-color);
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  padding-top: 63px;
+  padding-left: 24px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms var(--transition), opacity 250ms var(--transition);
+}
+
+.gallery__link:hover .gallery__overlay,
+.gallery__link:focus .gallery__overlay {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .backdrop {
@@ -754,4 +894,69 @@ img {
 .footer-socials__icon:hover,
 .footer-socials__icon:focus {
   background-color: var(--accent-color);
+}
+
+/* підпишись форма у футер form*/
+.email-input {
+  width: 570px;
+  margin-left: auto;
+}
+
+.email-input__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--font-color);
+  margin-bottom: 20px;
+}
+
+.email-input__box {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+  outline: none;
+  color: var(--font-color);
+  transition: border-color 250ms var(--transition);
+}
+
+.email-input_box:hover,
+.email-input__box:focus {
+  border-color: var(--accent-color);
+}
+
+.email-input__form {
+  display: flex;
+  align-items: baseline;
+}
+
+.email-input__btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  padding: 10px 28px;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--font-color);
+  background: var(--accent-color);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  transition: transform 250ms var(--transition), box-shadow 250ms var(--transition);
+}
+
+.email-input__icon {
+  background-color: var(--accent-color);
+  fill: var(--font-color);
+  align-self: center;
+  margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */
