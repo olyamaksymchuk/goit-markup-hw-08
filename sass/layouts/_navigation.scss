@@ -34,3 +34,17 @@
   bottom: -1px;
   left: 0;
 }
+
+.navigation-menu__button {
+  display: inline-flex;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.navigation-menu__button .navigation-menu__icon--cross {
+  display: none;
+}
+.navigation-menu__button .is-open .navigation-menu__icon--menu {
+  display: block;
+}
