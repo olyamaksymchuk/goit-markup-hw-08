@@ -484,7 +484,10 @@ summary {
     font-size: 44px;
     line-height: 1.4;
     letter-spacing: 0.06em;
-    max-width: 696px;
+    max-width: 1600px;
+    color: var(--font-color);
+    align-items: center;
+    margin: auto;
   }
 }
 
@@ -517,6 +520,8 @@ summary {
 @media screen and (min-width: 1200px) {
   .page-hero__button {
     padding: 10px 32px;
+    background-color: var(--accent-color);
+    color: var(--font-color);
   }
 }
 

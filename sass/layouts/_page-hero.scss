@@ -39,7 +39,10 @@
 
   @media screen and (min-width: 1200px) {
     @include fonts(900, 44px, 1.4, 0.06em);
-    max-width: 696px;
+    max-width: 1600px;
+    color: var(--font-color);
+    align-items: center;
+    margin: auto;
   }
 }
 
@@ -70,5 +73,7 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 10px 32px;
+    background-color: var(--accent-color);
+    color: var(--font-color);
   }
 }
