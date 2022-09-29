@@ -20,13 +20,15 @@ textarea {
   resize: none;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media sreen and (min-width: 768px) {
@@ -898,12 +900,15 @@ summary {
 @media screen and (min-width: 1200px) {
   .offers {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: var(--font-color);
+    margin-top: 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .offers__item {
-    width: 354px;
     flex-basis: calc((100% - 30px) / 2);
   }
 }
@@ -927,7 +932,6 @@ summary {
 }
 @media screen and (min-width: 768px) {
   .offers__box {
-    width: 100%;
     width: 354px;
   }
 }
@@ -944,6 +948,11 @@ summary {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+  .offers__title {
+    text-align: center;
+  }
 }
 
 .offers__text {

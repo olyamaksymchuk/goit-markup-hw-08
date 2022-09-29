@@ -11,12 +11,15 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: var(--font-color);
+    margin-top: 60px;
   }
 }
 
 .offers__item {
   @media screen and (min-width: 768px) {
-    width: 354px;
     flex-basis: calc((100% - 30px) / 2);
   }
 
@@ -39,7 +42,6 @@
   border-radius: 4px;
 
   @media screen and (min-width: 768px) {
-    width: 100%;
     width: 354px;
   }
 }
@@ -54,6 +56,10 @@
   @include fonts(700, 14px, 1.1, 0.03em);
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
 }
 
 .offers__text {
