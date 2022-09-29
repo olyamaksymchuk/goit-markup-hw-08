@@ -3,6 +3,9 @@
 @import "./components/section";
 @import "./components/hidden";
 @import "./utils/variables";
+@import "./utils/normalize";
+@import "./utils/placeholders";
+@import "./utils/mixin";
 @import "./layouts/page-header";
 @import "./components/logo";
 @import "./layouts/navigation";
@@ -15,4 +18,3 @@
 @import "./components/socials";
 @import "./layouts/clients";
 @import "./layouts/page-footer";
-@import "./utils/placeholders";

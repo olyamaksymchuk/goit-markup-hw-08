@@ -18,7 +18,7 @@
   font-family: inherit;
   background-color: #f5f4fa;
   color: var(--primary-text-color);
-  @include fonts(500 16px, 1.6, 0.03em);
+  @include fonts(500, 16px, 1.6, 0.03em);
   text-align: center;
   border: 1px solid transparent;
   border-radius: 4px;

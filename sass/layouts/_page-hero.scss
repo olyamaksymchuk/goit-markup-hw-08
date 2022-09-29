@@ -13,15 +13,13 @@
   margin: auto;
   text-align: center;
   display: block;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   position: relative;
 
-  @media screen and (min-width: 484px) {
-  }
-
   @media screen and (min-width: 768px) {
-    padding: 204px 118px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -31,38 +29,46 @@
 }
 
 .page-hero__title {
-  color: var(--font-color);
-  @include fonts(900, 44px, 1.4, 0.06em);
-  text-transform: uppercase;
-  max-width: 696px;
-  margin: 0 auto;
+  @media screen and (max-width: 1199px) {
+    color: var(--font-color);
+    @include fonts(900, 26px, 1.6, 0.06em);
+    text-transform: uppercase;
+    max-width: 360px;
+    margin: 0 auto;
+  }
 
-  @media screen and (min-width: 484px) {
-    @include fonts(null, 42px, null, null);
+  @media screen and (min-width: 1200px) {
+    @include fonts(900, 44px, 1.4, 0.06em);
+    max-width: 696px;
   }
 }
 
 .page-hero__button {
-  font-family: inherit;
-  background-color: var(--accent-color);
-  color: var(--font-color);
-  @include fonts(700, 16px, 1.9, null);
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  min-width: 216px;
-  padding: 10px 32px;
-  margin: 0 auto;
-  margin-top: 30px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  border-color: #188ce8;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--transition);
-}
+  @media screen and (max-width: 1199px) {
+    font-family: inherit;
+    background-color: var(--accent-color);
+    color: var(--font-color);
+    @include fonts(700, 16px, 1.9, null);
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    min-width: 216px;
+    padding: 10px 24px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-color: #188ce8;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition);
 
-.page-hero__button:hover,
-.page-hero__button:focus {
-  background-color: #188ce8;
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
 }

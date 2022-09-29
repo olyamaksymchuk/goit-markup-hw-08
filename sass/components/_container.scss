@@ -4,25 +4,15 @@
     max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
   }
-
   //tablet styles
-  @media screen and (min-width: 768px) {
+  @media sreen and (min-width: 768px) {
     max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 15px;
-    padding-left: 15px;
   }
-
   //desktop styles
-  @media screen and (max-width: 1200px) {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+  @media sreen and (min-width: 1200px) {
+    max-width: 1200px;
   }
 }

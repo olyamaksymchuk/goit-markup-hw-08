@@ -4,7 +4,10 @@
 }
 
 .section__title {
-  @include fonts(700, 36px, 1.2, 0.03em);
+  font-style: bold;
+  font-size: 36px;
+  line-height: 1.12;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-align: center;
 }
