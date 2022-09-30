@@ -1,28 +1,19 @@
 .offers {
-  @media screen and (min-width: 480px) {
-    display: block;
-    margin-top: 60px;
-  }
-  @media screen and (max-width: 1199px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    background-color: var(--font-color);
-    margin-top: 60px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: var(--font-color);
 }
 
 .offers__item {
+  width: 100%;
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 3 * 30px) / 4);
-    margin-right: 30px;
-    &:last-child {
-      margin-right: 0;
-    }
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 
@@ -34,10 +25,6 @@
   margin-bottom: 30px;
   border: 1px solid transparent;
   border-radius: 4px;
-
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
 }
 
 .offers__icon {
@@ -53,6 +40,9 @@
 
   @media screen and (min-width: 480px) {
     text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: left;
   }
 }
 

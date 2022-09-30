@@ -31,7 +31,6 @@
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-
     margin: auto;
   }
 }
@@ -47,6 +46,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    margin: 0;
     @include fonts(900, 44px, 1.4, 0.06em);
   }
 }
