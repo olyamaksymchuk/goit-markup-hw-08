@@ -1,10 +1,27 @@
 .team__section {
   background-color: var(--team-font);
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
 }
 
 .team {
-  display: flex;
-  margin-top: 50px;
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+  }
 }
 
 .team__item {
@@ -13,6 +30,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   margin-right: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: calc((100% -30px) / 2);
+  }
 }
 
 .team__item:last-child {

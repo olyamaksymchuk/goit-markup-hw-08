@@ -31,12 +31,12 @@ textarea {
     max-width: 480px;
   }
 }
-@media sreen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
-@media sreen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
@@ -66,12 +66,17 @@ textarea {
 }
 
 .section__title {
-  font-style: bold;
-  font-size: 36px;
-  line-height: 1.12;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+  }
 }
 
 .visually-hidden {
@@ -459,11 +464,11 @@ summary {
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
+    margin: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .page-hero {
-    width: 768px;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -487,6 +492,7 @@ summary {
 }
 @media screen and (max-width: 1199px) {
   .page-hero__title {
+    max-width: 360px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6;
@@ -496,7 +502,6 @@ summary {
 @media screen and (min-width: 1200px) {
   .page-hero__title {
     max-width: 696px;
-    margin: 0;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -1007,10 +1012,27 @@ img {
 .team__section {
   background-color: var(--team-font);
 }
+@media screen and (max-width: 1199px) {
+  .team__section {
+    margin-top: 60px;
+  }
+}
 
-.team {
-  display: flex;
-  margin-top: 50px;
+@media screen and (min-width: 480px) {
+  .team {
+    display: block;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    margin-top: 50px;
+  }
 }
 
 .team__item {
