@@ -1,15 +1,9 @@
 .offers {
-  display: block;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    background-color: var(--font-color);
+  @media screen and (min-width: 480px) {
+    display: block;
     margin-top: 60px;
   }
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;

@@ -426,58 +426,53 @@ summary {
   left: 0;
 }
 
-.navigation-menu__button {
-  display: inline-flex;
-  margin: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.navigation-menu__button .navigation-menu__icon--cross {
-  display: none;
-}
-
-.navigation-menu__button .is-open .navigation-menu__icon--menu {
-  display: block;
-}
-
 .page-hero {
   background-color: var(--hero-font);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/font.jpg);
-  max-width: 1600px;
-  height: 600px;
   align-items: center;
   margin-top: 0;
   margin: auto;
   text-align: center;
   display: block;
-  padding-top: 118px;
-  padding-bottom: 118px;
   position: relative;
+}
+@media screen and (min-width: 480px) {
+  .page-hero {
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 @media screen and (min-width: 768px) {
   .page-hero {
+    width: 768px;
+    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 1200px) {
   .page-hero {
+    width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin: auto;
   }
 }
 
+.page-hero__title {
+  align-items: center;
+  color: var(--font-color);
+  margin: 0 auto;
+  text-transform: uppercase;
+}
 @media screen and (max-width: 1199px) {
   .page-hero__title {
-    color: var(--font-color);
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    max-width: 360px;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -486,44 +481,40 @@ summary {
     font-size: 44px;
     line-height: 1.4;
     letter-spacing: 0.06em;
-    max-width: 1600px;
-    color: var(--font-color);
-    align-items: center;
-    margin: auto;
   }
 }
 
+.page-hero__button {
+  font-family: inherit;
+  background-color: var(--accent-color);
+  color: var(--font-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  min-width: 216px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border-color: #188ce8;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition);
+}
+.page-hero__button:hover, .page-hero__button:focus {
+  background-color: #188ce8;
+}
 @media screen and (max-width: 1199px) {
   .page-hero__button {
-    font-family: inherit;
-    background-color: var(--accent-color);
-    color: var(--font-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    min-width: 216px;
     padding: 10px 24px;
-    margin: 0 auto;
-    margin-top: 30px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    border-color: #188ce8;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--transition);
-  }
-  .page-hero__button:hover, .page-hero__button:focus {
-    background-color: #188ce8;
   }
 }
 @media screen and (min-width: 1200px) {
   .page-hero__button {
     padding: 10px 32px;
-    background-color: var(--accent-color);
-    color: var(--font-color);
   }
 }
 
@@ -885,19 +876,13 @@ summary {
   cursor: pointer;
 }
 
-.offers {
-  display: block;
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .offers {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    background-color: var(--font-color);
+    display: block;
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .offers {
     display: flex;
     flex-wrap: wrap;
@@ -1250,4 +1235,27 @@ img {
   fill: var(--font-color);
   align-self: center;
   margin-left: 10px;
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */

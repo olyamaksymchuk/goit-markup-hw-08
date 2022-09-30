@@ -20,14 +20,7 @@
         <div class="container page-header__container">
                     <a class="logo page-header__logo" href="" lang="en">Web<span class="studio">Studio</span></a>                      
         <nav>
-            <button type="button" class="navigation-menu__button is-open">
-                <svg width="44" 
-                height="44" 
-                aria-label="перемикач мобільного меню">
-                <use class="navigation-menu__icon--menu" href="./images/icons.svg#icon-menu_24px-1"></use>
-                <use class="navigation-menu__icon--cross" href="./images/icons.svg#icon-close_24px-1"></use>
-            </svg>
-            </button>
+            
             <ul class="navigation list">
                 <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--current">Студія</a></li>
                 <li><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
@@ -48,6 +41,16 @@
                     </use>
                     </svg>+38 096 111 11 11</a></li>
         </ul>
+        <button class="menu-btn js-open-menu" 
+                type="button" 
+                aria-expanded="false" 
+                aria-controls="mobile-menu">
+                <svg width="40" 
+                height="40" 
+                aria-label="перемикач мобільного меню">
+                <use class="menu-btn__icon" href="./images/icons.svg#icon-menu_40px"></use>
+            </svg>
+            </button>
     </div>     
     </header>
     <main>
@@ -483,6 +486,32 @@
                     <button type="submit" class="form-box__btn">Відправити</button>
                     </form>
             </div>
+
+            <!--mobile-menu-->
+
+     <div class="menu-container js-menu-container is-open" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+       <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+    <!--mobile menu script-->
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+
+<!--modal script-->
     <script src="./js/modal.js"></script>
     <script>
     (() => {
