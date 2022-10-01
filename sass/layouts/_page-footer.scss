@@ -6,7 +6,13 @@
 
 .page-footer__container {
   display: flex;
-  align-items: baseline;
+  /*align-items: baseline;*/
+
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .studio--color-light {
