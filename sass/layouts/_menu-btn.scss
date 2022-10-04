@@ -10,6 +10,12 @@
   padding-bottom: 15px;
 }
 
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .menu-open__btn {
   display: flex;
   align-items: center;
