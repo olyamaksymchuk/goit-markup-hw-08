@@ -38,6 +38,13 @@
   margin-bottom: 9px;
 }
 
+.mob-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .mob-menu__link {
   font-weight: 500;
   font-size: 40px;
@@ -48,4 +55,38 @@
 
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
+}
+.mob-connect__item {
+  margin-bottom: 32px;
+}
+
+.mob-mail__item {
+  margin-bottom: 64px;
+}
+
+.mob-tel__link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mob-connect__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--contact-color);
+}
+.mob-soc__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mob-soc__item .mob-soc__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--accent-color);
 }

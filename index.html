@@ -40,8 +40,7 @@
                     </use>
                     </svg>+38 096 111 11 11</a></li>
         </ul>
-        <button class="menu-open__btn"
-                type="button" 
+        <button class="menu-open__btn" type="button" data-menu-open 
                 aria-expanded="false" 
                 aria-controls="mobile-menu">
                 <svg width="40" height="40" 
@@ -49,9 +48,10 @@
                 <use class="menu-btn__icon" href="./images/icons.svg#icon-menu_40px"></use>
             </svg>
             </button>
-        <div class="mob-menu">
-            <div class="container">
-            <button class="menu-close__btn" type="button">
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="mob-container">
+                <div class="mob-menu__top">
+                    <button class="menu-close__btn" data-menu-close type="button">
                 <svg width="40" height="40" 
                 aria-label="закриття мобільного меню">
                 <use class="menu-btn__icon" href="./images/icons.svg#icon-close_40px"></use>
@@ -67,13 +67,14 @@
                     <a href="" class="mob-menu__link">Контакти</a></li>
             </ul>            
         </nav>
-          <ul class="mob-connect__list list">     
-                <li>
+    </div>
+            <div class="mob-menu__bottom"><ul class="mob-connect__list list">     
+                <li class="mob-connect__item">
+                    <a class="mob-tel__link" href="tel:+380961111111">
+                +38 096 111 11 11</a></li>
+                <li class="mob-mail__item">
                     <a class="mob-connect__link" href="http://info@devstudio.com">
                 info@devstudio.com</a></li>
-                <li>
-                    <a class="mob-connect__link" href="tel:+380961111111">
-                +38 096 111 11 11</a></li>
         </ul>
         <ul class="mob-soc__list list">
             <li class="mob-soc__item">
@@ -100,7 +101,8 @@
     </div>
     </div>
     </div>
-    </div>     
+    </div>
+         
     </header>
     <main>
         <section class="page-hero">
@@ -540,19 +542,8 @@
            
 <!--modal script-->
     <script src="./js/modal.js"></script>
-    <script>
-    (() => {
-        document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-                console.log(`${name}: ${value}`),
-            );
-
-            e.currentTarget.reset();
-        });
-    })();
-</script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/forma.js"></script>
 </body>
-    </body>
+    
 </html>
