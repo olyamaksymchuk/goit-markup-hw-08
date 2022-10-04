@@ -20,7 +20,6 @@
         <div class="container page-header__container">
                     <a class="logo page-header__logo" href="" lang="en">Web<span class="studio">Studio</span></a>                      
         <nav>
-            
             <ul class="navigation list">
                 <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--current">Студія</a></li>
                 <li><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
@@ -41,16 +40,66 @@
                     </use>
                     </svg>+38 096 111 11 11</a></li>
         </ul>
-        <button class="menu-btn__open  js-open-menu"
+        <button class="menu-open__btn"
                 type="button" 
                 aria-expanded="false" 
                 aria-controls="mobile-menu">
-                <svg width="40" 
-                height="40" 
+                <svg width="40" height="40" 
                 aria-label="перемикач мобільного меню">
                 <use class="menu-btn__icon" href="./images/icons.svg#icon-menu_40px"></use>
             </svg>
             </button>
+        <div class="mob-menu">
+            <div class="container">
+            <button class="menu-close__btn" type="button">
+                <svg width="40" height="40" 
+                aria-label="закриття мобільного меню">
+                <use class="menu-btn__icon" href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+            </button>
+            <nav class="mob-menu__navigation">
+            <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                    <a href="" class="mob-menu__link">Студія</a></li>
+                <li class="mob-menu__item">
+                    <a href="" class="mob-menu__link">Портфоліо</a></li>
+                <li class="mob-menu__item">
+                    <a href="" class="mob-menu__link">Контакти</a></li>
+            </ul>            
+        </nav>
+          <ul class="mob-connect__list list">     
+                <li>
+                    <a class="mob-connect__link" href="http://info@devstudio.com">
+                info@devstudio.com</a></li>
+                <li>
+                    <a class="mob-connect__link" href="tel:+380961111111">
+                +38 096 111 11 11</a></li>
+        </ul>
+        <ul class="mob-soc__list list">
+            <li class="mob-soc__item">
+                <a href="" 
+                class="mob-soc__link link" 
+                target="_blank" 
+                rel="noopener norefferer nofollow">Instagram</a></li>
+            <li class="mob-soc__item">
+                <a href="" 
+                class="mob-soc__link link" 
+                target="_blank" 
+                rel="noopener norefferer nofollow">Twitter</a></li>
+            <li class="mob-soc__item">
+                <a href="" 
+                class="mob-soc__link link" 
+                target="_blank" 
+                rel="noopener norefferer nofollow">Facebook</a></li>
+            <li class="mob-soc__item">
+                <a href="" 
+                class="mob-soc__link link" 
+                target="_blank" 
+                rel="noopener norefferer nofollow">LinkedIn</a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
     </div>     
     </header>
     <main>
@@ -401,31 +450,7 @@
     </div>
     </footer>
     
-    <!--mobile-menu-->
-
-     <div class="mob-menu js-menu-container is-open" id="mobile-menu">
-      <button class="menu-btn__close js-close-menu">
-        <svg width="40" height="40">
-          <use href="./images/icons.svg#icon-close_40px"></use>
-        </svg>
-      </button>
-       <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
-    </div>
-    <!--mobile menu script-->
-      <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="./js/mobile-menu.js"></script>
-
-<!--is hidden modal-->
+   <!--is hidden modal-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
                 <button type="button" class="modal__button" data-modal-close>

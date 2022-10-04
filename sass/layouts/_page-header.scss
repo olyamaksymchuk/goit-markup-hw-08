@@ -19,6 +19,10 @@
   @extend %flex;
   margin-left: auto;
   gap: 30px;
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
 }
 
 .connect__link {
@@ -29,14 +33,17 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition);
-}
 
-.connect__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
+  &_icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 
-.connect__link:hover,
-.connect__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
 }
