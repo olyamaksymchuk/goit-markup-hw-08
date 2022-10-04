@@ -524,11 +524,6 @@ summary {
 .navigation {
   gap: 50px;
 }
-@media screen and (min-width: 480px) {
-  .navigation {
-    display: none;
-  }
-}
 
 .navigation__link {
   display: block;
