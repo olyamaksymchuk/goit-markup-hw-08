@@ -7,7 +7,7 @@
   height: 100%;
   background-color: #fff;
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-right: 15px;
 }
 
 .mob-menu.is-hidden {
@@ -28,6 +28,10 @@
   cursor: pointer;
   padding: 0;
   margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-close__btn {
@@ -40,17 +44,30 @@
   background-color: transparent;
   cursor: pointer;
   padding: 0;
-  fill: var(--accent-color);
+  fill: var(--primary-text-color);
   margin-bottom: 9px;
+  
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
-.mob-container {
+.mob-box {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+.mob-menu__top {
+  padding-left: 40px;
+  padding-top: 48px;
+}
 
+.mob-menu__bottom {
+  padding-left: 40px;
+  padding-bottom: 48px;
+}
 .mob-menu__link {
   font-weight: 500;
   font-size: 40px;
@@ -87,10 +104,13 @@
 }
 .mob-soc__list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
-.mob-soc__item .mob-soc__link {
+.mob-soc__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mob-soc__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
