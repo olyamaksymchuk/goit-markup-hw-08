@@ -1307,11 +1307,9 @@ img {
   display: flex;
   /*align-items: baseline;*/
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .page-footer__container {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
