@@ -1422,6 +1422,13 @@ img {
   margin-left: 70px;
   align-items: baseline;
 }
+@media screen and (min-width: 480px) {
+  .socials__box {
+    margin: 0;
+    margin-bottom: 60px;
+    align-items: center;
+  }
+}
 
 .socials__title {
   font-weight: 700;
@@ -1431,6 +1438,11 @@ img {
   color: var(--font-color);
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .socials__title {
+    text-align: center;
+  }
 }
 
 .socials__link-theme-dark {
