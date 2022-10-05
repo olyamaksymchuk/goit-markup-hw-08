@@ -1341,6 +1341,21 @@ img {
   align-items: baseline;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
 .studio--color-light {
   color: var(--font-color);
 }

@@ -8,7 +8,19 @@
   display: flex;
   align-items: baseline;
 }
+.footer__tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
 .studio--color-light {
   color: var(--font-color);
 }
