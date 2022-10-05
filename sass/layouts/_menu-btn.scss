@@ -29,7 +29,7 @@
   padding: 0;
   margin-left: auto;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 484px) {
     display: none;
   }
 }
@@ -46,7 +46,7 @@
   padding: 0;
   fill: var(--primary-text-color);
   margin-bottom: 9px;
-  
+
   &:hover,
   &:focus {
     fill: var(--accent-color);

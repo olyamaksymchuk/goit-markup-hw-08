@@ -2,7 +2,7 @@
   @extend %flex;
   gap: 50px;
 
-  @media screen and (min-width: 484px) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
 }
@@ -10,9 +10,12 @@
 .navigation__link {
   display: block;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  padding: 32px 2px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   position: relative;
   transition-property: color;
   transition-duration: 250ms;

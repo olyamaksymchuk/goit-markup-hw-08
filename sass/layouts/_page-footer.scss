@@ -6,17 +6,14 @@
 
 .page-footer__container {
   display: flex;
-  /*align-items: baseline;*/
-
-  @media screen and (max-width: 480px) {
-    display: block;
-  }
+  align-items: baseline;
 }
+
 .studio--color-light {
   color: var(--font-color);
 }
 
-.page-footer__address {
+.page-footer__text {
   color: var(--font-color);
   font-style: normal;
   font-family: "Roboto";

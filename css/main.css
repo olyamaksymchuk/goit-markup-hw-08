@@ -360,19 +360,48 @@ summary {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+@media screen and (min-width: 480px) {
+  .page-header__logo {
+    margin-left: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .connect {
   margin-left: auto;
   gap: 30px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .connect {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .connect {
+    display: block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
   }
 }
 
@@ -388,12 +417,13 @@ summary {
   transition-duration: 250ms;
   transition-timing-function: var(--transition);
 }
-.connect__link_icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
 .connect__link:hover, .connect__link:focus {
   color: var(--accent-color);
+}
+
+.connect__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .mob-menu {
@@ -427,7 +457,7 @@ summary {
   padding: 0;
   margin-left: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 484px) {
   .menu-open__btn {
     display: none;
   }
@@ -540,7 +570,7 @@ summary {
 .navigation {
   gap: 50px;
 }
-@media screen and (min-width: 484px) {
+@media screen and (max-width: 480px) {
   .navigation {
     display: none;
   }
@@ -549,9 +579,12 @@ summary {
 .navigation__link {
   display: block;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  padding: 32px 2px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   position: relative;
   transition-property: color;
   transition-duration: 250ms;
@@ -1305,19 +1338,14 @@ img {
 
 .page-footer__container {
   display: flex;
-  /*align-items: baseline;*/
-}
-@media screen and (max-width: 480px) {
-  .page-footer__container {
-    display: block;
-  }
+  align-items: baseline;
 }
 
 .studio--color-light {
   color: var(--font-color);
 }
 
-.page-footer__address {
+.page-footer__text {
   color: var(--font-color);
   font-style: normal;
   font-family: "Roboto";
