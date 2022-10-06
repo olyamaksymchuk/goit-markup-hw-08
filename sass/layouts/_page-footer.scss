@@ -148,6 +148,11 @@
   outline: none;
   color: var(--font-color);
   transition: border-color 250ms var(--transition);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
 }
 
 .email-input_box:hover,
@@ -158,9 +163,12 @@
 .email-input__form {
   display: flex;
   align-items: baseline;
+
   @media screen and (min-width: 480px) {
     width: 450px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -177,6 +185,10 @@
   border: none;
   transition: transform 250ms var(--transition),
     box-shadow 250ms var(--transition);
+
+  @media screen and (min-width: 480px) {
+    margin: 0;
+  }
 }
 
 .email-input__icon {
