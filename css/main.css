@@ -876,6 +876,12 @@ summary {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--transition);
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+    min-height: 609px;
+  }
+}
 
 .modal__button {
   width: 30px;
