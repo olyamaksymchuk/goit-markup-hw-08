@@ -1166,6 +1166,15 @@ summary {
 }
 
 .products {
+  padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .products {
+    display: none;
+  }
+}
+
+.products__list {
   display: flex;
   flex-basis: calc((100% - 60px) / 3);
   background-color: var(--font-color);

@@ -1,4 +1,12 @@
 .products {
+  padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.products__list {
   display: flex;
   flex-basis: calc((100% - 2 * 30px) / 3);
   background-color: var(--font-color);
