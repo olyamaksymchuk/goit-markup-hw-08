@@ -6,6 +6,12 @@
   @extend %flex;
   margin-top: 0;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+  }
 }
 .portfolio-buttons__item {
   margin-right: 8px;
@@ -48,6 +54,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+  }
 }
 
 .gallery__item {
