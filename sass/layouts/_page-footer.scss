@@ -8,17 +8,18 @@
   display: flex;
   align-items: baseline;
 
-  @media screen and (min-width: 480px) {
-    display: block;
-  }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 60px;
     align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
   }
 }
 .footer-address {
@@ -46,6 +47,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
+    gap: 0;
     align-items: baseline;
   }
 }
@@ -89,14 +91,9 @@
   margin-left: 70px;
   align-items: baseline;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     margin: 0;
-    margin-bottom: 60px;
     align-items: center;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin: 0;
   }
 }
 
@@ -106,7 +103,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     text-align: center;
   }
 }
@@ -130,15 +127,12 @@
   width: 570px;
   margin-left: auto;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  @media screen and (min-width: 768px) {
     margin: 0;
   }
 }
@@ -149,7 +143,7 @@
   color: var(--font-color);
   margin-bottom: 20px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -166,8 +160,7 @@
   color: var(--font-color);
   transition: border-color 250ms var(--transition);
 
-  @media screen and (min-width: 480px) {
-    width: 450px;
+  @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
 }
@@ -181,8 +174,7 @@
   display: flex;
   align-items: baseline;
 
-  @media screen and (min-width: 480px) {
-    width: 450px;
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,8 +195,11 @@
   transition: transform 250ms var(--transition),
     box-shadow 250ms var(--transition);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 

@@ -1340,12 +1340,7 @@ img {
   display: flex;
   align-items: baseline;
 }
-@media screen and (min-width: 480px) {
-  .page-footer__container {
-    display: block;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .page-footer__container {
     display: flex;
     flex-direction: column;
@@ -1353,6 +1348,12 @@ img {
     flex-wrap: wrap;
     gap: 60px;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__container {
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -1383,6 +1384,7 @@ img {
   .footer__tablet {
     display: flex;
     flex-direction: row;
+    gap: 0;
     align-items: baseline;
   }
 }
@@ -1432,16 +1434,10 @@ img {
   margin-left: 70px;
   align-items: baseline;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .socials__box {
     margin: 0;
-    margin-bottom: 60px;
     align-items: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .socials__box {
-    margin: 0;
   }
 }
 
@@ -1454,7 +1450,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .socials__title {
     text-align: center;
   }
@@ -1478,17 +1474,13 @@ img {
   width: 570px;
   margin-left: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .email-input {
     width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .email-input {
     margin: 0;
   }
 }
@@ -1502,7 +1494,7 @@ img {
   color: var(--font-color);
   margin-bottom: 20px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .email-input__text {
     text-align: center;
   }
@@ -1520,9 +1512,8 @@ img {
   color: var(--font-color);
   transition: border-color 250ms var(--transition);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .email-input__box {
-    width: 450px;
     margin-bottom: 20px;
   }
 }
@@ -1536,9 +1527,8 @@ img {
   display: flex;
   align-items: baseline;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .email-input__form {
-    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1560,9 +1550,14 @@ img {
   border: none;
   transition: transform 250ms var(--transition), box-shadow 250ms var(--transition);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .email-input__btn {
     margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .email-input__btn {
+    margin-left: 12px;
   }
 }
 
