@@ -160,14 +160,15 @@
             <div class="container">
             <h2 class="section__title">Чим ми займаємося</h2>
             <ul class="products list">
-                <li class="products__item"><img src="./images/about1.jpg" 
+                <li class="products__item">
+                    <img src="./images/about1.jpg" 
                     alt="розробка програмного забезпечення"
                     width="370"
                     height="294">
                     <div class="products__box">
                     <p class="products__text">десктопні додатки</p>
                 </div>
-                </li>
+                   </li>
                 
                 <li class="products__item"><img src="./images/about2.jpg" 
                     alt="тестування мобільного забезпечення"
@@ -192,10 +193,28 @@
             <div class="container">
             <h2 class="section__title">Наша команда</h2>
             <ul class="team list">
-                <li class="team__item"><img src="./images/designer.jpg" 
-                    alt="Product designer"
-                    width="270"
-                    height="260">
+                <li class="team__item">
+                    <picture>
+                        <!--Desktop-->
+                        <source media="(min-width:1200px)" 
+                        srcset="./images/team/img_l-@1.jpg 1x, ./images/team/img_l-@2x.jpg 2x"
+                        type="image/webp"/>
+
+                        <source media="(min-width:1200px)" 
+                        srcset="./images/team/img_l-@1.jpg 1x, ./images/team/img_l-@2x.jpg 2x"
+                        type="image/jpg"/>
+                        
+                        <!--Tablet-->
+                        <source media="(min-width:768px)" 
+                        srcset="./images/team/img_md-@1x.jpg 1x, ./images/team/img_md-@2x.jpg 2x"/>
+                        <!--Mobile-->
+                        <source media="(min-width:480px)" 
+                        srcset="./images/team/img_sm-@1x.jpg 1x, ./images/team/img_sm-@2x.jpg 2x"/>
+                        <img 
+                    src="./images/team/img_l-@1.jpg" 
+                    alt="Product designer">
+                </picture>
+                    
                     <div class="team__wrap">
                     <h3 class="team__title">Ігор Дем'яненко</h3>
                     <p class="team__text" lang="en">Product designer</p>
@@ -229,7 +248,9 @@
                     </ul>
                 </div>
                 </li>
-                <li class="team__item"><img src="./images/frontend.jpg" 
+                <li class="team__item"><img 
+                    srcset="./images/team/img_sm-@1x-1.jpg 1x, ./images/team/img_sm-@2x-1.jpg 2x"
+                    src="./images/frontend.jpg" 
                     alt="Frontend Developer"
                     width="270"
                     height="260">
@@ -266,7 +287,9 @@
                     </ul>
                 </div>
                 </li>
-                <li class="team__item"><img src="./images/marketing.jpg" 
+                <li class="team__item"><img 
+                    srcset="./images/team/img_sm-@1x-3.jpg 1x, ./images/team/img_sm-@2x-3.jpg 2x"
+                    src="./images/marketing.jpg" 
                     alt="Marketing"
                     width="270"
                     height="260">
@@ -303,7 +326,9 @@
                     </ul>
                 </div>
                 </li>
-                <li class="team__item"><img src="./images/ui.jpg" 
+                <li class="team__item"><img 
+                    srcset="./images/team/img_sm-@1x-4.jpg 1x, ./images/team/img_sm-@2x-4.jpg 2x"
+                    src="./images/ui.jpg" 
                     alt="UI Designer"
                     width="270"
                     height="260">
