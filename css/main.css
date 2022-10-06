@@ -1463,6 +1463,15 @@ img {
   width: 570px;
   margin-left: auto;
 }
+@media screen and (min-width: 480px) {
+  .email-input {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .email-input__text {
   font-weight: 700;
@@ -1472,6 +1481,11 @@ img {
   text-transform: uppercase;
   color: var(--font-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .email-input__text {
+    text-align: center;
+  }
 }
 
 .email-input__box {
@@ -1495,6 +1509,12 @@ img {
 .email-input__form {
   display: flex;
   align-items: baseline;
+}
+@media screen and (min-width: 480px) {
+  .email-input__form {
+    width: 450px;
+    margin-bottom: 20px;
+  }
 }
 
 .email-input__btn {
