@@ -751,6 +751,11 @@ summary {
     justify-content: flex-start;
   }
 }
+@media screen and (min-width: 768px) {
+  .portfolio-buttons {
+    justify-content: center;
+  }
+}
 
 .portfolio-buttons__item {
   margin-right: 8px;
@@ -794,22 +799,33 @@ summary {
   padding-top: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .gallery {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
 .gallery__item {
-  flex-basis: calc((100% - 60px) / 3);
-  border: 1px solid #ffffff;
+  width: 370px;
+  border: 1px solid #eeeeee;
   border-radius: 4px;
   transition-property: opacity;
   transition-delay: 250ms;
   transition-timing-function: var(--transition);
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .gallery__link {
@@ -841,7 +857,7 @@ summary {
 
 .gallery__wrap {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border: 1px solid transparent;
   border-top: 0;
 }
 
@@ -922,6 +938,7 @@ summary {
   .modal {
     max-width: 450px;
     min-height: 609px;
+    flex-basis: calc(100% - 30px);
   }
 }
 
@@ -979,7 +996,7 @@ summary {
 }
 
 .modal-box__field {
-  width: 448px;
+  width: 100%;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -1064,6 +1081,14 @@ summary {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 1199px) {
+  .checkbox__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
 
 .checkbox__text span {
   width: 16px;
@@ -1089,6 +1114,11 @@ summary {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   border: 1px solid transparent;
+}
+@media screen and (max-width: 1199px) {
+  .modal-box__link {
+    margin-left: 5px;
+  }
 }
 
 .form-box__btn {
@@ -1240,8 +1270,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .team {
-    display: block;
-    margin-top: 30px;
+    display: flex;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1265,10 +1294,7 @@ img {
 }
 @media screen and (min-width: 480px) {
   .team__item {
-    display: block;
-  }
-  .team__item:not(:last-child) {
-    margin-bottom: 30px;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 768px) {

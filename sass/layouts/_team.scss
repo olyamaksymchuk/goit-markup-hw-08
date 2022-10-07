@@ -8,8 +8,7 @@
 
 .team {
   @media screen and (min-width: 480px) {
-    display: block;
-    margin-top: 30px;
+    display: flex;
   }
 
   @media screen and (min-width: 768px) {
@@ -31,11 +30,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   @media screen and (min-width: 480px) {
-    display: block;
-
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+    flex-direction: column;
   }
 
   @media screen and (min-width: 768px) {

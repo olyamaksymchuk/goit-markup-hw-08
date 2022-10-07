@@ -38,6 +38,7 @@
   @media screen and (max-width: 1199px) {
     max-width: 450px;
     min-height: 609px;
+    flex-basis: calc(100% - 30px);
   }
 }
 
@@ -90,7 +91,7 @@
   border-radius: 4px;
 }
 .modal-box__field {
-  width: 448px;
+  width: 100%;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -166,6 +167,10 @@
   @extend %flex;
   color: var(--contact-color);
   @include fonts(400, 14px, 1.7, 0.03em);
+
+  @media screen and (max-width: 1199px) {
+    @include fonts(400, 12px, 1.16, 0.03em);
+  }
 }
 
 .checkbox__text span {
@@ -193,6 +198,10 @@
   color: var(--accent-color);
   text-decoration-line: underline;
   border: 1px solid transparent;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: 5px;
+  }
 }
 
 .form-box__btn {
