@@ -5,9 +5,10 @@
   left: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
-  padding-top: 10px;
-  padding-right: 15px;
+  padding: 48px 40px;
 }
 
 .mob-menu.is-hidden {
@@ -29,44 +30,28 @@
   padding: 0;
   margin-left: auto;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     display: none;
   }
 }
 
 .menu-close__btn {
-  display: block;
-  margin: 0;
-  width: 40px;
-  height: 40px;
-  margin-left: auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   border: none;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
   fill: var(--primary-text-color);
-  margin-bottom: 9px;
 
   &:hover,
   &:focus {
     fill: var(--accent-color);
   }
 }
-
-.mob-box {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.mob-menu__top {
-  padding-left: 40px;
-  padding-top: 48px;
-}
-
-.mob-menu__bottom {
-  padding-left: 40px;
-  padding-bottom: 48px;
+.mob-menu__navigation {
+  margin-bottom: auto;
 }
 .mob-menu__link {
   font-weight: 500;

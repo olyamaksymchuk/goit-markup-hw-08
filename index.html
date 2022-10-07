@@ -49,9 +49,7 @@
             </svg>
             </button>
         <div class="mob-menu is-hidden" data-menu>
-            <div class="mob-box">
-                <div class="mob-menu__top">
-                    <button class="menu-close__btn" data-menu-close type="button">
+               <button class="menu-close__btn" data-menu-close type="button">
                 <svg width="40" height="40" 
                 aria-label="закриття мобільного меню">
                 <use class="menu-btn__icon" href="./images/icons.svg#icon-close_40px"></use>
@@ -68,9 +66,7 @@
                     <a href="" class="mob-menu__link">Контакти</a></li>
             </ul>            
         </nav>
-    </div>
-            <div class="mob-menu__bottom">
-                <ul class="mob-connect__list list">     
+             <ul class="mob-connect__list list">     
                 <li class="mob-connect__item">
                     <a class="mob-tel__link" href="tel:+380961111111">
                 +38 096 111 11 11</a></li>
@@ -100,9 +96,8 @@
                 target="_blank" 
                 rel="noopener norefferer nofollow">LinkedIn</a></li>
         </ul>
-    </div>
-    </div>
-    </div>
+   
+     </div>
     </div>
          
     </header>
@@ -311,7 +306,9 @@
                         
                         <!--Mobile-->
                         <source media="(min-width:480px)"  
-                         srcset="./images/team/img_sm-@1x-1_result.webp 1x, ./images/team/img_sm-@2x_-1result.webp 2x"
+                         srcset="
+                         ./images/team/img_sm-@1x-1_result.webp 1x, 
+                         ./images/team/img_sm-@2x-1_result.webp 2x"
                         type="image/webp"/>
                         <source media="(min-width:480px)" 
                         srcset="./images/team/img_sm-@1x-1.jpg 1x, ./images/team/img_sm-@2x-1.jpg 2x"
@@ -320,6 +317,7 @@
                     srcset="./images/team/img_sm-@1x-1.jpg 1x, ./images/team/img_sm-@2x-1.jpg 2x"
                     src="./images/team/img_md-@1x-1.jpg" 
                     alt="Frontend Developer"
+                    class="team_img"
                     >
                 </picture>
                     
