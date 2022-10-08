@@ -23,7 +23,7 @@
   }
 }
 .footer-address {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     align-items: center;
     text-align: center;
   }
@@ -54,14 +54,16 @@
 .studio--color-light {
   color: var(--font-color);
 }
+.page-footer__adr {
+  margin-top: 20px;
+}
 
 .page-footer__text {
   color: var(--font-color);
   font-style: normal;
   font-family: "Roboto";
   @include fonts(400, 14px, 1.7, 0.03em);
-  margin-bottom: 9px;
-  margin-top: 20px;
+  margin-bottom: 8px;
 }
 
 .page-footer__connect {
@@ -103,7 +105,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -134,6 +136,9 @@
     align-items: center;
     justify-content: center;
     margin: 0;
+  }
+  @media screen and (min-width: 480px) {
+    width: 100%;
   }
 }
 

@@ -7,7 +7,6 @@
 
 .page-header__logo {
   @media screen and (min-width: 480px) {
-    margin-left: 15px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -45,6 +44,8 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: center;
+    margin: 0;
     margin-left: auto;
     gap: 30px;
   }
@@ -53,8 +54,13 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 10px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .connect__link {
+  display: flex;
+  align-items: center;
   @include fonts(500, 14px, 1.1, 0.02em);
   color: var(--contact-color);
   padding-top: 32px;
@@ -66,6 +72,12 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    display: flex;
+    align-items: center;
   }
 }
 .connect__icon {

@@ -11,15 +11,15 @@
   flex-basis: calc((100% - 2 * 30px) / 3);
   background-color: var(--font-color);
   padding-top: 0;
+  margin-top: 50px;
 }
 
 .products__item {
-  margin-top: 50px;
   margin-right: 30px;
   position: relative;
 }
 
-img {
+.products__img {
   max-width: 370px;
   width: 100%;
   height: auto;
