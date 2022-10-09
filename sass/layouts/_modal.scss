@@ -25,25 +25,21 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
+  width: 90%;
+  min-height: 609px;
   padding: 40px;
+  max-width: 450px;
   background-color: var(--font-color);
   border-radius: 4px;
   box-shadow: 0px 1 px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--transition);
+  transition: transform 250ms var(--transition),
+    box-shadow 250ms var(--transition);
 
-  @media screen and (max-width: 767px) {
-    max-width: 450px;
-    width: calc(100% - 30px);
-    padding: 40px;
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: 450px;
-    min-height: 609px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -173,22 +169,23 @@
 }
 
 .checkbox__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--contact-color);
-  @include fonts(400, 14px, 1.7, 0.03em);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 
   @media screen and (min-width: 480px) {
-    @include fonts(400, 10px, 1.12, 0.03em);
+    font-size: 10px;
+    line-height: 1.12;
   }
 
   @media screen and (min-width: 768px) {
-    @include fonts(400, 12px, 1.16, 0.03em);
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @include fonts(400, 12px, 1.7, 0.03em);
+    font-size: 12px;
+    line-height: 1.16;
   }
 }
 
