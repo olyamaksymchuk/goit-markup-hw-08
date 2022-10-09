@@ -59,6 +59,10 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mob-menu__item:not(:last-child) {
@@ -87,12 +91,21 @@
   letter-spacing: 0.02em;
   color: var(--contact-color);
 }
+
+.mob-menu__link--active {
+  color: var(--accent-color);
+}
 .mob-soc__list {
   display: flex;
   justify-content: flex-start;
 }
+
+.mob-soc__item:not(:first-child) {
+  padding-left: 10px;
+}
 .mob-soc__item:not(:last-child) {
-  margin-right: 20px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob-soc__link {
