@@ -16,10 +16,10 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero-img/img_sm-@2x.png);
+    background-image: url(../images/hero-img/Header-imgmob-2x.jpg);
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 480px) {
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -33,10 +33,10 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero-img/img_md-@2x.png);
+      background-image: url(../images/hero-img/Header-img-tabl-2x.jpg);
     }
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -50,7 +50,7 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero-img/Img_l-@2x.png);
+      background-image: url(../images/hero-img/Imgdesk-2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
