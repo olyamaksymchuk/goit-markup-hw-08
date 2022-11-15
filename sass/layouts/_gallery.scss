@@ -5,13 +5,11 @@
 .portfolio-buttons {
   @extend %flex;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: flex-start;
-  }
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
 
   @media screen and (min-width: 768px) {
     justify-content: center;
@@ -95,7 +93,7 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.galery__img {
+.gallery__img {
   display: block;
   width: 370;
   width: 100%;

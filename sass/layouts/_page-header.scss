@@ -61,10 +61,11 @@
 .connect__link {
   display: flex;
   align-items: center;
-  @include fonts(500, 14px, 1.1, 0.02em);
+  @include fonts(500, 12px, 1.1, 0.02em);
   color: var(--contact-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-bottom: 10px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition);
