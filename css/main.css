@@ -462,8 +462,8 @@ summary {
 
 .gallery__img {
   display: block;
-  width: 370;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .gallery__title {
