@@ -105,6 +105,43 @@
     <main>
         <section class="page-hero">
             <div class="container">
+                <picture>
+                    --Desktop--
+                    <source media="(min-width:1200px)"
+                         srcset="./images/hero-img/hero_bg_result.webp 1x,
+                                ./images/hero-img/hero-bg2x_result.webp 2x" 
+                                type="image/webp"/>
+                   
+                    <source media="(min-width:1200px)" 
+                    srcset="./images/hero-img/hero_bg.jpg 1x,
+                             ./images/hero-img/hero-bg2x.jpg 2x"       
+                             type="image/jpg"/>
+                    <img src="./images/hero-img/hero_bg.jpg"  
+                    alt="hero img">
+                    
+                    --Tablet--
+                    <source media="(min-width: 768px)" 
+                        srcset="./images/hero-img/Imghero-bg_tabl_result.webp 1x,
+                            ./images/hero-img/Imghero-bg__tabl2x_result.webp 2x"
+                            type="image/webp"/>
+                    <source media="(min-width:768px)" 
+                    srcset="./images/hero-img/Imghero-bg_tabl.jpg 1x,
+                             ./images/hero-img/Imghero-bg__tabl2x.jpg 2x"       
+                             type="image/jpg"/>
+                    <img src="./images/hero-img/Imghero-bg_tabl.jpg"  
+                    alt="hero img"> 
+                    
+                    --Mobile--
+                    <source media="(min-width:480px)"
+                        srcset="./images/hero-img/Header imghero-bg_mob_result.webp 1x,
+                            ./images/hero-img/Header imghero-bg_mob@2x_result.webp 2x"
+                            type="image/webp"/>
+                    <source media="(min-width:480px)"
+                        srcset="./images\hero-img/Header imghero-bg_mob.jpg 1x,
+                            ./images/hero-img/Header imghero-bg_mob@2x.jpg 2x"
+                            type="image/jpg"/>      
+                     </picture> 
+                    
                 <h1 class="page-hero__title">Ефективні рішення для вашого бізнесу</h1>
             <button data-modal-open class="page-hero__button" type="button">Замовити послугу</button>
             </div>
