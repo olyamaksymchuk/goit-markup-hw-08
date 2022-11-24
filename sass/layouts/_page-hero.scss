@@ -19,8 +19,11 @@
   position: relative;
   background-repeat: no-repeat;
 
-  @media ((min-device-pixel-ratio) 
- (min-resolution)) @media screen and (min-width: 1200px) {
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+
+   @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
